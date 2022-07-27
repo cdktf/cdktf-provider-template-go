@@ -3,10 +3,10 @@ package template
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/hashicorp/cdktf-provider-template-go/template/jsii"
+	_init_ "github.com/hashicorp/cdktf-provider-template-go/template/v2/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/hashicorp/cdktf-provider-template-go/template/internal"
+	"github.com/hashicorp/cdktf-provider-template-go/template/v2/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -19,6 +19,10 @@ type CloudinitConfig interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
+	Connection() interface{}
+	// Experimental.
+	SetConnection(val interface{})
+	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
 	Count() *float64
@@ -28,6 +32,10 @@ type CloudinitConfig interface {
 	DependsOn() *[]*string
 	// Experimental.
 	SetDependsOn(val *[]*string)
+	// Experimental.
+	ForEach() cdktf.ITerraformIterator
+	// Experimental.
+	SetForEach(val cdktf.ITerraformIterator)
 	// Experimental.
 	Fqn() *string
 	// Experimental.
@@ -50,6 +58,10 @@ type CloudinitConfig interface {
 	Provider() cdktf.TerraformProvider
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
+	// Experimental.
+	Provisioners() *[]interface{}
+	// Experimental.
+	SetProvisioners(val *[]interface{})
 	// Experimental.
 	RawOverrides() interface{}
 	Rendered() *string
@@ -136,6 +148,16 @@ func (j *jsiiProxy_CloudinitConfig) CdktfStack() cdktf.TerraformStack {
 	return returns
 }
 
+func (j *jsiiProxy_CloudinitConfig) Connection() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"connection",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_CloudinitConfig) ConstructNodeMetadata() *map[string]interface{} {
 	var returns *map[string]interface{}
 	_jsii_.Get(
@@ -161,6 +183,16 @@ func (j *jsiiProxy_CloudinitConfig) DependsOn() *[]*string {
 	_jsii_.Get(
 		j,
 		"dependsOn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_CloudinitConfig) ForEach() cdktf.ITerraformIterator {
+	var returns cdktf.ITerraformIterator
+	_jsii_.Get(
+		j,
+		"forEach",
 		&returns,
 	)
 	return returns
@@ -276,6 +308,16 @@ func (j *jsiiProxy_CloudinitConfig) Provider() cdktf.TerraformProvider {
 	return returns
 }
 
+func (j *jsiiProxy_CloudinitConfig) Provisioners() *[]interface{} {
+	var returns *[]interface{}
+	_jsii_.Get(
+		j,
+		"provisioners",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_CloudinitConfig) RawOverrides() interface{} {
 	var returns interface{}
 	_jsii_.Get(
@@ -361,6 +403,14 @@ func (j *jsiiProxy_CloudinitConfig) SetBase64Encode(val interface{}) {
 	)
 }
 
+func (j *jsiiProxy_CloudinitConfig) SetConnection(val interface{}) {
+	_jsii_.Set(
+		j,
+		"connection",
+		val,
+	)
+}
+
 func (j *jsiiProxy_CloudinitConfig) SetCount(val *float64) {
 	_jsii_.Set(
 		j,
@@ -373,6 +423,14 @@ func (j *jsiiProxy_CloudinitConfig) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
+		val,
+	)
+}
+
+func (j *jsiiProxy_CloudinitConfig) SetForEach(val cdktf.ITerraformIterator) {
+	_jsii_.Set(
+		j,
+		"forEach",
 		val,
 	)
 }
@@ -405,6 +463,14 @@ func (j *jsiiProxy_CloudinitConfig) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
+		val,
+	)
+}
+
+func (j *jsiiProxy_CloudinitConfig) SetProvisioners(val *[]interface{}) {
+	_jsii_.Set(
+		j,
+		"provisioners",
 		val,
 	)
 }
@@ -692,13 +758,19 @@ func (c *jsiiProxy_CloudinitConfig) ToTerraform() interface{} {
 
 type CloudinitConfigConfig struct {
 	// Experimental.
+	Connection interface{} `field:"optional" json:"connection" yaml:"connection"`
+	// Experimental.
 	Count *float64 `field:"optional" json:"count" yaml:"count"`
 	// Experimental.
 	DependsOn *[]cdktf.ITerraformDependable `field:"optional" json:"dependsOn" yaml:"dependsOn"`
 	// Experimental.
+	ForEach cdktf.ITerraformIterator `field:"optional" json:"forEach" yaml:"forEach"`
+	// Experimental.
 	Lifecycle *cdktf.TerraformResourceLifecycle `field:"optional" json:"lifecycle" yaml:"lifecycle"`
 	// Experimental.
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
+	// Experimental.
+	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// part block.
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/template/r/cloudinit_config#part CloudinitConfig#part}
@@ -1487,6 +1559,10 @@ type DataTemplateCloudinitConfig interface {
 	// Experimental.
 	SetDependsOn(val *[]*string)
 	// Experimental.
+	ForEach() cdktf.ITerraformIterator
+	// Experimental.
+	SetForEach(val cdktf.ITerraformIterator)
+	// Experimental.
 	Fqn() *string
 	// Experimental.
 	FriendlyUniqueId() *string
@@ -1619,6 +1695,16 @@ func (j *jsiiProxy_DataTemplateCloudinitConfig) DependsOn() *[]*string {
 	_jsii_.Get(
 		j,
 		"dependsOn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataTemplateCloudinitConfig) ForEach() cdktf.ITerraformIterator {
+	var returns cdktf.ITerraformIterator
+	_jsii_.Get(
+		j,
+		"forEach",
 		&returns,
 	)
 	return returns
@@ -1831,6 +1917,14 @@ func (j *jsiiProxy_DataTemplateCloudinitConfig) SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DataTemplateCloudinitConfig) SetForEach(val cdktf.ITerraformIterator) {
+	_jsii_.Set(
+		j,
+		"forEach",
 		val,
 	)
 }
@@ -2150,13 +2244,19 @@ func (d *jsiiProxy_DataTemplateCloudinitConfig) ToTerraform() interface{} {
 
 type DataTemplateCloudinitConfigConfig struct {
 	// Experimental.
+	Connection interface{} `field:"optional" json:"connection" yaml:"connection"`
+	// Experimental.
 	Count *float64 `field:"optional" json:"count" yaml:"count"`
 	// Experimental.
 	DependsOn *[]cdktf.ITerraformDependable `field:"optional" json:"dependsOn" yaml:"dependsOn"`
 	// Experimental.
+	ForEach cdktf.ITerraformIterator `field:"optional" json:"forEach" yaml:"forEach"`
+	// Experimental.
 	Lifecycle *cdktf.TerraformResourceLifecycle `field:"optional" json:"lifecycle" yaml:"lifecycle"`
 	// Experimental.
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
+	// Experimental.
+	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// part block.
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/template/d/cloudinit_config#part DataTemplateCloudinitConfig#part}
@@ -2945,6 +3045,10 @@ type DataTemplateFile interface {
 	SetFilename(val *string)
 	FilenameInput() *string
 	// Experimental.
+	ForEach() cdktf.ITerraformIterator
+	// Experimental.
+	SetForEach(val cdktf.ITerraformIterator)
+	// Experimental.
 	Fqn() *string
 	// Experimental.
 	FriendlyUniqueId() *string
@@ -3078,6 +3182,16 @@ func (j *jsiiProxy_DataTemplateFile) FilenameInput() *string {
 	_jsii_.Get(
 		j,
 		"filenameInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataTemplateFile) ForEach() cdktf.ITerraformIterator {
+	var returns cdktf.ITerraformIterator
+	_jsii_.Get(
+		j,
+		"forEach",
 		&returns,
 	)
 	return returns
@@ -3290,6 +3404,14 @@ func (j *jsiiProxy_DataTemplateFile) SetFilename(val *string) {
 	_jsii_.Set(
 		j,
 		"filename",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DataTemplateFile) SetForEach(val cdktf.ITerraformIterator) {
+	_jsii_.Set(
+		j,
+		"forEach",
 		val,
 	)
 }
@@ -3617,13 +3739,19 @@ func (d *jsiiProxy_DataTemplateFile) ToTerraform() interface{} {
 
 type DataTemplateFileConfig struct {
 	// Experimental.
+	Connection interface{} `field:"optional" json:"connection" yaml:"connection"`
+	// Experimental.
 	Count *float64 `field:"optional" json:"count" yaml:"count"`
 	// Experimental.
 	DependsOn *[]cdktf.ITerraformDependable `field:"optional" json:"dependsOn" yaml:"dependsOn"`
 	// Experimental.
+	ForEach cdktf.ITerraformIterator `field:"optional" json:"forEach" yaml:"forEach"`
+	// Experimental.
 	Lifecycle *cdktf.TerraformResourceLifecycle `field:"optional" json:"lifecycle" yaml:"lifecycle"`
 	// Experimental.
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
+	// Experimental.
+	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/template/d/file#filename DataTemplateFile#filename}.
 	Filename *string `field:"optional" json:"filename" yaml:"filename"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/template/d/file#id DataTemplateFile#id}.
@@ -3647,6 +3775,10 @@ type Dir interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
+	Connection() interface{}
+	// Experimental.
+	SetConnection(val interface{})
+	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
 	Count() *float64
@@ -3659,6 +3791,10 @@ type Dir interface {
 	DestinationDir() *string
 	SetDestinationDir(val *string)
 	DestinationDirInput() *string
+	// Experimental.
+	ForEach() cdktf.ITerraformIterator
+	// Experimental.
+	SetForEach(val cdktf.ITerraformIterator)
 	// Experimental.
 	Fqn() *string
 	// Experimental.
@@ -3676,6 +3812,10 @@ type Dir interface {
 	Provider() cdktf.TerraformProvider
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
+	// Experimental.
+	Provisioners() *[]interface{}
+	// Experimental.
+	SetProvisioners(val *[]interface{})
 	// Experimental.
 	RawOverrides() interface{}
 	SourceDir() *string
@@ -3745,6 +3885,16 @@ func (j *jsiiProxy_Dir) CdktfStack() cdktf.TerraformStack {
 	return returns
 }
 
+func (j *jsiiProxy_Dir) Connection() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"connection",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_Dir) ConstructNodeMetadata() *map[string]interface{} {
 	var returns *map[string]interface{}
 	_jsii_.Get(
@@ -3790,6 +3940,16 @@ func (j *jsiiProxy_Dir) DestinationDirInput() *string {
 	_jsii_.Get(
 		j,
 		"destinationDirInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Dir) ForEach() cdktf.ITerraformIterator {
+	var returns cdktf.ITerraformIterator
+	_jsii_.Get(
+		j,
+		"forEach",
 		&returns,
 	)
 	return returns
@@ -3860,6 +4020,16 @@ func (j *jsiiProxy_Dir) Provider() cdktf.TerraformProvider {
 	_jsii_.Get(
 		j,
 		"provider",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_Dir) Provisioners() *[]interface{} {
+	var returns *[]interface{}
+	_jsii_.Get(
+		j,
+		"provisioners",
 		&returns,
 	)
 	return returns
@@ -3972,6 +4142,14 @@ func NewDir_Override(d Dir, scope constructs.Construct, id *string, config *DirC
 	)
 }
 
+func (j *jsiiProxy_Dir) SetConnection(val interface{}) {
+	_jsii_.Set(
+		j,
+		"connection",
+		val,
+	)
+}
+
 func (j *jsiiProxy_Dir) SetCount(val *float64) {
 	_jsii_.Set(
 		j,
@@ -3996,6 +4174,14 @@ func (j *jsiiProxy_Dir) SetDestinationDir(val *string) {
 	)
 }
 
+func (j *jsiiProxy_Dir) SetForEach(val cdktf.ITerraformIterator) {
+	_jsii_.Set(
+		j,
+		"forEach",
+		val,
+	)
+}
+
 func (j *jsiiProxy_Dir) SetId(val *string) {
 	_jsii_.Set(
 		j,
@@ -4016,6 +4202,14 @@ func (j *jsiiProxy_Dir) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
+		val,
+	)
+}
+
+func (j *jsiiProxy_Dir) SetProvisioners(val *[]interface{}) {
+	_jsii_.Set(
+		j,
+		"provisioners",
 		val,
 	)
 }
@@ -4303,13 +4497,19 @@ func (d *jsiiProxy_Dir) ToTerraform() interface{} {
 
 type DirConfig struct {
 	// Experimental.
+	Connection interface{} `field:"optional" json:"connection" yaml:"connection"`
+	// Experimental.
 	Count *float64 `field:"optional" json:"count" yaml:"count"`
 	// Experimental.
 	DependsOn *[]cdktf.ITerraformDependable `field:"optional" json:"dependsOn" yaml:"dependsOn"`
 	// Experimental.
+	ForEach cdktf.ITerraformIterator `field:"optional" json:"forEach" yaml:"forEach"`
+	// Experimental.
 	Lifecycle *cdktf.TerraformResourceLifecycle `field:"optional" json:"lifecycle" yaml:"lifecycle"`
 	// Experimental.
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
+	// Experimental.
+	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// Path to the directory where the templated files will be written.
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/template/r/dir#destination_dir Dir#destination_dir}
@@ -4335,6 +4535,10 @@ type File interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
+	Connection() interface{}
+	// Experimental.
+	SetConnection(val interface{})
+	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
 	Count() *float64
@@ -4347,6 +4551,10 @@ type File interface {
 	Filename() *string
 	SetFilename(val *string)
 	FilenameInput() *string
+	// Experimental.
+	ForEach() cdktf.ITerraformIterator
+	// Experimental.
+	SetForEach(val cdktf.ITerraformIterator)
 	// Experimental.
 	Fqn() *string
 	// Experimental.
@@ -4364,6 +4572,10 @@ type File interface {
 	Provider() cdktf.TerraformProvider
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
+	// Experimental.
+	Provisioners() *[]interface{}
+	// Experimental.
+	SetProvisioners(val *[]interface{})
 	// Experimental.
 	RawOverrides() interface{}
 	Rendered() *string
@@ -4436,6 +4648,16 @@ func (j *jsiiProxy_File) CdktfStack() cdktf.TerraformStack {
 	return returns
 }
 
+func (j *jsiiProxy_File) Connection() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"connection",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_File) ConstructNodeMetadata() *map[string]interface{} {
 	var returns *map[string]interface{}
 	_jsii_.Get(
@@ -4481,6 +4703,16 @@ func (j *jsiiProxy_File) FilenameInput() *string {
 	_jsii_.Get(
 		j,
 		"filenameInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_File) ForEach() cdktf.ITerraformIterator {
+	var returns cdktf.ITerraformIterator
+	_jsii_.Get(
+		j,
+		"forEach",
 		&returns,
 	)
 	return returns
@@ -4551,6 +4783,16 @@ func (j *jsiiProxy_File) Provider() cdktf.TerraformProvider {
 	_jsii_.Get(
 		j,
 		"provider",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_File) Provisioners() *[]interface{} {
+	var returns *[]interface{}
+	_jsii_.Get(
+		j,
+		"provisioners",
 		&returns,
 	)
 	return returns
@@ -4673,6 +4915,14 @@ func NewFile_Override(f File, scope constructs.Construct, id *string, config *Fi
 	)
 }
 
+func (j *jsiiProxy_File) SetConnection(val interface{}) {
+	_jsii_.Set(
+		j,
+		"connection",
+		val,
+	)
+}
+
 func (j *jsiiProxy_File) SetCount(val *float64) {
 	_jsii_.Set(
 		j,
@@ -4697,6 +4947,14 @@ func (j *jsiiProxy_File) SetFilename(val *string) {
 	)
 }
 
+func (j *jsiiProxy_File) SetForEach(val cdktf.ITerraformIterator) {
+	_jsii_.Set(
+		j,
+		"forEach",
+		val,
+	)
+}
+
 func (j *jsiiProxy_File) SetId(val *string) {
 	_jsii_.Set(
 		j,
@@ -4717,6 +4975,14 @@ func (j *jsiiProxy_File) SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
+		val,
+	)
+}
+
+func (j *jsiiProxy_File) SetProvisioners(val *[]interface{}) {
+	_jsii_.Set(
+		j,
+		"provisioners",
 		val,
 	)
 }
@@ -5020,13 +5286,19 @@ func (f *jsiiProxy_File) ToTerraform() interface{} {
 
 type FileConfig struct {
 	// Experimental.
+	Connection interface{} `field:"optional" json:"connection" yaml:"connection"`
+	// Experimental.
 	Count *float64 `field:"optional" json:"count" yaml:"count"`
 	// Experimental.
 	DependsOn *[]cdktf.ITerraformDependable `field:"optional" json:"dependsOn" yaml:"dependsOn"`
 	// Experimental.
+	ForEach cdktf.ITerraformIterator `field:"optional" json:"forEach" yaml:"forEach"`
+	// Experimental.
 	Lifecycle *cdktf.TerraformResourceLifecycle `field:"optional" json:"lifecycle" yaml:"lifecycle"`
 	// Experimental.
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
+	// Experimental.
+	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/template/r/file#filename File#filename}.
 	Filename *string `field:"optional" json:"filename" yaml:"filename"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/template/r/file#id File#id}.
