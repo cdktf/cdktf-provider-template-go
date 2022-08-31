@@ -345,6 +345,9 @@ func (j *jsiiProxy_DataTemplateCloudinitConfig) TerraformResourceType() *string 
 func NewDataTemplateCloudinitConfig(scope constructs.Construct, id *string, config *DataTemplateCloudinitConfigConfig) DataTemplateCloudinitConfig {
 	_init_.Initialize()
 
+	if err := validateNewDataTemplateCloudinitConfigParameters(scope, id, config); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_DataTemplateCloudinitConfig{}
 
 	_jsii_.Create(
@@ -367,7 +370,10 @@ func NewDataTemplateCloudinitConfig_Override(d DataTemplateCloudinitConfig, scop
 	)
 }
 
-func (j *jsiiProxy_DataTemplateCloudinitConfig) SetBase64Encode(val interface{}) {
+func (j *jsiiProxy_DataTemplateCloudinitConfig)SetBase64Encode(val interface{}) {
+	if err := j.validateSetBase64EncodeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"base64Encode",
@@ -375,7 +381,7 @@ func (j *jsiiProxy_DataTemplateCloudinitConfig) SetBase64Encode(val interface{})
 	)
 }
 
-func (j *jsiiProxy_DataTemplateCloudinitConfig) SetCount(val *float64) {
+func (j *jsiiProxy_DataTemplateCloudinitConfig)SetCount(val *float64) {
 	_jsii_.Set(
 		j,
 		"count",
@@ -383,7 +389,7 @@ func (j *jsiiProxy_DataTemplateCloudinitConfig) SetCount(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_DataTemplateCloudinitConfig) SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_DataTemplateCloudinitConfig)SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -391,7 +397,7 @@ func (j *jsiiProxy_DataTemplateCloudinitConfig) SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_DataTemplateCloudinitConfig) SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_DataTemplateCloudinitConfig)SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -399,7 +405,10 @@ func (j *jsiiProxy_DataTemplateCloudinitConfig) SetForEach(val cdktf.ITerraformI
 	)
 }
 
-func (j *jsiiProxy_DataTemplateCloudinitConfig) SetGzip(val interface{}) {
+func (j *jsiiProxy_DataTemplateCloudinitConfig)SetGzip(val interface{}) {
+	if err := j.validateSetGzipParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"gzip",
@@ -407,7 +416,10 @@ func (j *jsiiProxy_DataTemplateCloudinitConfig) SetGzip(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_DataTemplateCloudinitConfig) SetId(val *string) {
+func (j *jsiiProxy_DataTemplateCloudinitConfig)SetId(val *string) {
+	if err := j.validateSetIdParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"id",
@@ -415,7 +427,10 @@ func (j *jsiiProxy_DataTemplateCloudinitConfig) SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DataTemplateCloudinitConfig) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_DataTemplateCloudinitConfig)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+	if err := j.validateSetLifecycleParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"lifecycle",
@@ -423,7 +438,7 @@ func (j *jsiiProxy_DataTemplateCloudinitConfig) SetLifecycle(val *cdktf.Terrafor
 	)
 }
 
-func (j *jsiiProxy_DataTemplateCloudinitConfig) SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_DataTemplateCloudinitConfig)SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -451,6 +466,9 @@ func (j *jsiiProxy_DataTemplateCloudinitConfig) SetProvider(val cdktf.TerraformP
 func DataTemplateCloudinitConfig_IsConstruct(x interface{}) *bool {
 	_init_.Initialize()
 
+	if err := validateDataTemplateCloudinitConfig_IsConstructParameters(x); err != nil {
+		panic(err)
+	}
 	var returns *bool
 
 	_jsii_.StaticInvoke(
@@ -475,6 +493,9 @@ func DataTemplateCloudinitConfig_TfResourceType() *string {
 }
 
 func (d *jsiiProxy_DataTemplateCloudinitConfig) AddOverride(path *string, value interface{}) {
+	if err := d.validateAddOverrideParameters(path, value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		d,
 		"addOverride",
@@ -483,6 +504,9 @@ func (d *jsiiProxy_DataTemplateCloudinitConfig) AddOverride(path *string, value 
 }
 
 func (d *jsiiProxy_DataTemplateCloudinitConfig) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+	if err := d.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]interface{}
 
 	_jsii_.Invoke(
@@ -496,6 +520,9 @@ func (d *jsiiProxy_DataTemplateCloudinitConfig) GetAnyMapAttribute(terraformAttr
 }
 
 func (d *jsiiProxy_DataTemplateCloudinitConfig) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := d.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -509,6 +536,9 @@ func (d *jsiiProxy_DataTemplateCloudinitConfig) GetBooleanAttribute(terraformAtt
 }
 
 func (d *jsiiProxy_DataTemplateCloudinitConfig) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+	if err := d.validateGetBooleanMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*bool
 
 	_jsii_.Invoke(
@@ -522,6 +552,9 @@ func (d *jsiiProxy_DataTemplateCloudinitConfig) GetBooleanMapAttribute(terraform
 }
 
 func (d *jsiiProxy_DataTemplateCloudinitConfig) GetListAttribute(terraformAttribute *string) *[]*string {
+	if err := d.validateGetListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*string
 
 	_jsii_.Invoke(
@@ -535,6 +568,9 @@ func (d *jsiiProxy_DataTemplateCloudinitConfig) GetListAttribute(terraformAttrib
 }
 
 func (d *jsiiProxy_DataTemplateCloudinitConfig) GetNumberAttribute(terraformAttribute *string) *float64 {
+	if err := d.validateGetNumberAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *float64
 
 	_jsii_.Invoke(
@@ -548,6 +584,9 @@ func (d *jsiiProxy_DataTemplateCloudinitConfig) GetNumberAttribute(terraformAttr
 }
 
 func (d *jsiiProxy_DataTemplateCloudinitConfig) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+	if err := d.validateGetNumberListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*float64
 
 	_jsii_.Invoke(
@@ -561,6 +600,9 @@ func (d *jsiiProxy_DataTemplateCloudinitConfig) GetNumberListAttribute(terraform
 }
 
 func (d *jsiiProxy_DataTemplateCloudinitConfig) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+	if err := d.validateGetNumberMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*float64
 
 	_jsii_.Invoke(
@@ -574,6 +616,9 @@ func (d *jsiiProxy_DataTemplateCloudinitConfig) GetNumberMapAttribute(terraformA
 }
 
 func (d *jsiiProxy_DataTemplateCloudinitConfig) GetStringAttribute(terraformAttribute *string) *string {
+	if err := d.validateGetStringAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *string
 
 	_jsii_.Invoke(
@@ -587,6 +632,9 @@ func (d *jsiiProxy_DataTemplateCloudinitConfig) GetStringAttribute(terraformAttr
 }
 
 func (d *jsiiProxy_DataTemplateCloudinitConfig) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+	if err := d.validateGetStringMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*string
 
 	_jsii_.Invoke(
@@ -600,6 +648,9 @@ func (d *jsiiProxy_DataTemplateCloudinitConfig) GetStringMapAttribute(terraformA
 }
 
 func (d *jsiiProxy_DataTemplateCloudinitConfig) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := d.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -613,6 +664,9 @@ func (d *jsiiProxy_DataTemplateCloudinitConfig) InterpolationForAttribute(terraf
 }
 
 func (d *jsiiProxy_DataTemplateCloudinitConfig) OverrideLogicalId(newLogicalId *string) {
+	if err := d.validateOverrideLogicalIdParameters(newLogicalId); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		d,
 		"overrideLogicalId",
@@ -621,6 +675,9 @@ func (d *jsiiProxy_DataTemplateCloudinitConfig) OverrideLogicalId(newLogicalId *
 }
 
 func (d *jsiiProxy_DataTemplateCloudinitConfig) PutPart(value interface{}) {
+	if err := d.validatePutPartParameters(value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		d,
 		"putPart",

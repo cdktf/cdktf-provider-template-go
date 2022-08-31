@@ -246,6 +246,9 @@ func (j *jsiiProxy_DataTemplateCloudinitConfigPartOutputReference) TerraformReso
 func NewDataTemplateCloudinitConfigPartOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) DataTemplateCloudinitConfigPartOutputReference {
 	_init_.Initialize()
 
+	if err := validateNewDataTemplateCloudinitConfigPartOutputReferenceParameters(terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_DataTemplateCloudinitConfigPartOutputReference{}
 
 	_jsii_.Create(
@@ -267,7 +270,10 @@ func NewDataTemplateCloudinitConfigPartOutputReference_Override(d DataTemplateCl
 	)
 }
 
-func (j *jsiiProxy_DataTemplateCloudinitConfigPartOutputReference) SetComplexObjectIndex(val interface{}) {
+func (j *jsiiProxy_DataTemplateCloudinitConfigPartOutputReference)SetComplexObjectIndex(val interface{}) {
+	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"complexObjectIndex",
@@ -275,7 +281,10 @@ func (j *jsiiProxy_DataTemplateCloudinitConfigPartOutputReference) SetComplexObj
 	)
 }
 
-func (j *jsiiProxy_DataTemplateCloudinitConfigPartOutputReference) SetComplexObjectIsFromSet(val *bool) {
+func (j *jsiiProxy_DataTemplateCloudinitConfigPartOutputReference)SetComplexObjectIsFromSet(val *bool) {
+	if err := j.validateSetComplexObjectIsFromSetParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"complexObjectIsFromSet",
@@ -283,7 +292,10 @@ func (j *jsiiProxy_DataTemplateCloudinitConfigPartOutputReference) SetComplexObj
 	)
 }
 
-func (j *jsiiProxy_DataTemplateCloudinitConfigPartOutputReference) SetContent(val *string) {
+func (j *jsiiProxy_DataTemplateCloudinitConfigPartOutputReference)SetContent(val *string) {
+	if err := j.validateSetContentParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"content",
@@ -291,7 +303,10 @@ func (j *jsiiProxy_DataTemplateCloudinitConfigPartOutputReference) SetContent(va
 	)
 }
 
-func (j *jsiiProxy_DataTemplateCloudinitConfigPartOutputReference) SetContentType(val *string) {
+func (j *jsiiProxy_DataTemplateCloudinitConfigPartOutputReference)SetContentType(val *string) {
+	if err := j.validateSetContentTypeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"contentType",
@@ -299,7 +314,10 @@ func (j *jsiiProxy_DataTemplateCloudinitConfigPartOutputReference) SetContentTyp
 	)
 }
 
-func (j *jsiiProxy_DataTemplateCloudinitConfigPartOutputReference) SetFilename(val *string) {
+func (j *jsiiProxy_DataTemplateCloudinitConfigPartOutputReference)SetFilename(val *string) {
+	if err := j.validateSetFilenameParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"filename",
@@ -307,7 +325,10 @@ func (j *jsiiProxy_DataTemplateCloudinitConfigPartOutputReference) SetFilename(v
 	)
 }
 
-func (j *jsiiProxy_DataTemplateCloudinitConfigPartOutputReference) SetInternalValue(val interface{}) {
+func (j *jsiiProxy_DataTemplateCloudinitConfigPartOutputReference)SetInternalValue(val interface{}) {
+	if err := j.validateSetInternalValueParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"internalValue",
@@ -315,7 +336,10 @@ func (j *jsiiProxy_DataTemplateCloudinitConfigPartOutputReference) SetInternalVa
 	)
 }
 
-func (j *jsiiProxy_DataTemplateCloudinitConfigPartOutputReference) SetMergeType(val *string) {
+func (j *jsiiProxy_DataTemplateCloudinitConfigPartOutputReference)SetMergeType(val *string) {
+	if err := j.validateSetMergeTypeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"mergeType",
@@ -323,7 +347,10 @@ func (j *jsiiProxy_DataTemplateCloudinitConfigPartOutputReference) SetMergeType(
 	)
 }
 
-func (j *jsiiProxy_DataTemplateCloudinitConfigPartOutputReference) SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_DataTemplateCloudinitConfigPartOutputReference)SetTerraformAttribute(val *string) {
+	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformAttribute",
@@ -331,7 +358,10 @@ func (j *jsiiProxy_DataTemplateCloudinitConfigPartOutputReference) SetTerraformA
 	)
 }
 
-func (j *jsiiProxy_DataTemplateCloudinitConfigPartOutputReference) SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_DataTemplateCloudinitConfigPartOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+	if err := j.validateSetTerraformResourceParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"terraformResource",
@@ -353,6 +383,9 @@ func (d *jsiiProxy_DataTemplateCloudinitConfigPartOutputReference) ComputeFqn() 
 }
 
 func (d *jsiiProxy_DataTemplateCloudinitConfigPartOutputReference) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+	if err := d.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]interface{}
 
 	_jsii_.Invoke(
@@ -366,6 +399,9 @@ func (d *jsiiProxy_DataTemplateCloudinitConfigPartOutputReference) GetAnyMapAttr
 }
 
 func (d *jsiiProxy_DataTemplateCloudinitConfigPartOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := d.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -379,6 +415,9 @@ func (d *jsiiProxy_DataTemplateCloudinitConfigPartOutputReference) GetBooleanAtt
 }
 
 func (d *jsiiProxy_DataTemplateCloudinitConfigPartOutputReference) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+	if err := d.validateGetBooleanMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*bool
 
 	_jsii_.Invoke(
@@ -392,6 +431,9 @@ func (d *jsiiProxy_DataTemplateCloudinitConfigPartOutputReference) GetBooleanMap
 }
 
 func (d *jsiiProxy_DataTemplateCloudinitConfigPartOutputReference) GetListAttribute(terraformAttribute *string) *[]*string {
+	if err := d.validateGetListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*string
 
 	_jsii_.Invoke(
@@ -405,6 +447,9 @@ func (d *jsiiProxy_DataTemplateCloudinitConfigPartOutputReference) GetListAttrib
 }
 
 func (d *jsiiProxy_DataTemplateCloudinitConfigPartOutputReference) GetNumberAttribute(terraformAttribute *string) *float64 {
+	if err := d.validateGetNumberAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *float64
 
 	_jsii_.Invoke(
@@ -418,6 +463,9 @@ func (d *jsiiProxy_DataTemplateCloudinitConfigPartOutputReference) GetNumberAttr
 }
 
 func (d *jsiiProxy_DataTemplateCloudinitConfigPartOutputReference) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+	if err := d.validateGetNumberListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*float64
 
 	_jsii_.Invoke(
@@ -431,6 +479,9 @@ func (d *jsiiProxy_DataTemplateCloudinitConfigPartOutputReference) GetNumberList
 }
 
 func (d *jsiiProxy_DataTemplateCloudinitConfigPartOutputReference) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+	if err := d.validateGetNumberMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*float64
 
 	_jsii_.Invoke(
@@ -444,6 +495,9 @@ func (d *jsiiProxy_DataTemplateCloudinitConfigPartOutputReference) GetNumberMapA
 }
 
 func (d *jsiiProxy_DataTemplateCloudinitConfigPartOutputReference) GetStringAttribute(terraformAttribute *string) *string {
+	if err := d.validateGetStringAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *string
 
 	_jsii_.Invoke(
@@ -457,6 +511,9 @@ func (d *jsiiProxy_DataTemplateCloudinitConfigPartOutputReference) GetStringAttr
 }
 
 func (d *jsiiProxy_DataTemplateCloudinitConfigPartOutputReference) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+	if err := d.validateGetStringMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*string
 
 	_jsii_.Invoke(
@@ -483,6 +540,9 @@ func (d *jsiiProxy_DataTemplateCloudinitConfigPartOutputReference) Interpolation
 }
 
 func (d *jsiiProxy_DataTemplateCloudinitConfigPartOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
+	if err := d.validateInterpolationForAttributeParameters(property); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -520,6 +580,9 @@ func (d *jsiiProxy_DataTemplateCloudinitConfigPartOutputReference) ResetMergeTyp
 }
 
 func (d *jsiiProxy_DataTemplateCloudinitConfigPartOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
+	if err := d.validateResolveParameters(_context); err != nil {
+		panic(err)
+	}
 	var returns interface{}
 
 	_jsii_.Invoke(

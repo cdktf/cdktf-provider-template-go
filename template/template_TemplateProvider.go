@@ -185,6 +185,9 @@ func (j *jsiiProxy_TemplateProvider) TerraformResourceType() *string {
 func NewTemplateProvider(scope constructs.Construct, id *string, config *TemplateProviderConfig) TemplateProvider {
 	_init_.Initialize()
 
+	if err := validateNewTemplateProviderParameters(scope, id, config); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_TemplateProvider{}
 
 	_jsii_.Create(
@@ -207,7 +210,7 @@ func NewTemplateProvider_Override(t TemplateProvider, scope constructs.Construct
 	)
 }
 
-func (j *jsiiProxy_TemplateProvider) SetAlias(val *string) {
+func (j *jsiiProxy_TemplateProvider)SetAlias(val *string) {
 	_jsii_.Set(
 		j,
 		"alias",
@@ -235,6 +238,9 @@ func (j *jsiiProxy_TemplateProvider) SetAlias(val *string) {
 func TemplateProvider_IsConstruct(x interface{}) *bool {
 	_init_.Initialize()
 
+	if err := validateTemplateProvider_IsConstructParameters(x); err != nil {
+		panic(err)
+	}
 	var returns *bool
 
 	_jsii_.StaticInvoke(
@@ -259,6 +265,9 @@ func TemplateProvider_TfResourceType() *string {
 }
 
 func (t *jsiiProxy_TemplateProvider) AddOverride(path *string, value interface{}) {
+	if err := t.validateAddOverrideParameters(path, value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		t,
 		"addOverride",
@@ -267,6 +276,9 @@ func (t *jsiiProxy_TemplateProvider) AddOverride(path *string, value interface{}
 }
 
 func (t *jsiiProxy_TemplateProvider) OverrideLogicalId(newLogicalId *string) {
+	if err := t.validateOverrideLogicalIdParameters(newLogicalId); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		t,
 		"overrideLogicalId",

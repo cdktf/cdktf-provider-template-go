@@ -373,6 +373,9 @@ func (j *jsiiProxy_CloudinitConfig) TerraformResourceType() *string {
 func NewCloudinitConfig(scope constructs.Construct, id *string, config *CloudinitConfigConfig) CloudinitConfig {
 	_init_.Initialize()
 
+	if err := validateNewCloudinitConfigParameters(scope, id, config); err != nil {
+		panic(err)
+	}
 	j := jsiiProxy_CloudinitConfig{}
 
 	_jsii_.Create(
@@ -395,7 +398,10 @@ func NewCloudinitConfig_Override(c CloudinitConfig, scope constructs.Construct, 
 	)
 }
 
-func (j *jsiiProxy_CloudinitConfig) SetBase64Encode(val interface{}) {
+func (j *jsiiProxy_CloudinitConfig)SetBase64Encode(val interface{}) {
+	if err := j.validateSetBase64EncodeParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"base64Encode",
@@ -403,7 +409,10 @@ func (j *jsiiProxy_CloudinitConfig) SetBase64Encode(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_CloudinitConfig) SetConnection(val interface{}) {
+func (j *jsiiProxy_CloudinitConfig)SetConnection(val interface{}) {
+	if err := j.validateSetConnectionParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"connection",
@@ -411,7 +420,7 @@ func (j *jsiiProxy_CloudinitConfig) SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_CloudinitConfig) SetCount(val *float64) {
+func (j *jsiiProxy_CloudinitConfig)SetCount(val *float64) {
 	_jsii_.Set(
 		j,
 		"count",
@@ -419,7 +428,7 @@ func (j *jsiiProxy_CloudinitConfig) SetCount(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_CloudinitConfig) SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_CloudinitConfig)SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -427,7 +436,7 @@ func (j *jsiiProxy_CloudinitConfig) SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_CloudinitConfig) SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_CloudinitConfig)SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -435,7 +444,10 @@ func (j *jsiiProxy_CloudinitConfig) SetForEach(val cdktf.ITerraformIterator) {
 	)
 }
 
-func (j *jsiiProxy_CloudinitConfig) SetGzip(val interface{}) {
+func (j *jsiiProxy_CloudinitConfig)SetGzip(val interface{}) {
+	if err := j.validateSetGzipParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"gzip",
@@ -443,7 +455,10 @@ func (j *jsiiProxy_CloudinitConfig) SetGzip(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_CloudinitConfig) SetId(val *string) {
+func (j *jsiiProxy_CloudinitConfig)SetId(val *string) {
+	if err := j.validateSetIdParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"id",
@@ -451,7 +466,10 @@ func (j *jsiiProxy_CloudinitConfig) SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_CloudinitConfig) SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_CloudinitConfig)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+	if err := j.validateSetLifecycleParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"lifecycle",
@@ -459,7 +477,7 @@ func (j *jsiiProxy_CloudinitConfig) SetLifecycle(val *cdktf.TerraformResourceLif
 	)
 }
 
-func (j *jsiiProxy_CloudinitConfig) SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_CloudinitConfig)SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -467,7 +485,10 @@ func (j *jsiiProxy_CloudinitConfig) SetProvider(val cdktf.TerraformProvider) {
 	)
 }
 
-func (j *jsiiProxy_CloudinitConfig) SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_CloudinitConfig)SetProvisioners(val *[]interface{}) {
+	if err := j.validateSetProvisionersParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"provisioners",
@@ -495,6 +516,9 @@ func (j *jsiiProxy_CloudinitConfig) SetProvisioners(val *[]interface{}) {
 func CloudinitConfig_IsConstruct(x interface{}) *bool {
 	_init_.Initialize()
 
+	if err := validateCloudinitConfig_IsConstructParameters(x); err != nil {
+		panic(err)
+	}
 	var returns *bool
 
 	_jsii_.StaticInvoke(
@@ -519,6 +543,9 @@ func CloudinitConfig_TfResourceType() *string {
 }
 
 func (c *jsiiProxy_CloudinitConfig) AddOverride(path *string, value interface{}) {
+	if err := c.validateAddOverrideParameters(path, value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		c,
 		"addOverride",
@@ -527,6 +554,9 @@ func (c *jsiiProxy_CloudinitConfig) AddOverride(path *string, value interface{})
 }
 
 func (c *jsiiProxy_CloudinitConfig) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+	if err := c.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]interface{}
 
 	_jsii_.Invoke(
@@ -540,6 +570,9 @@ func (c *jsiiProxy_CloudinitConfig) GetAnyMapAttribute(terraformAttribute *strin
 }
 
 func (c *jsiiProxy_CloudinitConfig) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := c.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -553,6 +586,9 @@ func (c *jsiiProxy_CloudinitConfig) GetBooleanAttribute(terraformAttribute *stri
 }
 
 func (c *jsiiProxy_CloudinitConfig) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+	if err := c.validateGetBooleanMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*bool
 
 	_jsii_.Invoke(
@@ -566,6 +602,9 @@ func (c *jsiiProxy_CloudinitConfig) GetBooleanMapAttribute(terraformAttribute *s
 }
 
 func (c *jsiiProxy_CloudinitConfig) GetListAttribute(terraformAttribute *string) *[]*string {
+	if err := c.validateGetListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*string
 
 	_jsii_.Invoke(
@@ -579,6 +618,9 @@ func (c *jsiiProxy_CloudinitConfig) GetListAttribute(terraformAttribute *string)
 }
 
 func (c *jsiiProxy_CloudinitConfig) GetNumberAttribute(terraformAttribute *string) *float64 {
+	if err := c.validateGetNumberAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *float64
 
 	_jsii_.Invoke(
@@ -592,6 +634,9 @@ func (c *jsiiProxy_CloudinitConfig) GetNumberAttribute(terraformAttribute *strin
 }
 
 func (c *jsiiProxy_CloudinitConfig) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+	if err := c.validateGetNumberListAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *[]*float64
 
 	_jsii_.Invoke(
@@ -605,6 +650,9 @@ func (c *jsiiProxy_CloudinitConfig) GetNumberListAttribute(terraformAttribute *s
 }
 
 func (c *jsiiProxy_CloudinitConfig) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+	if err := c.validateGetNumberMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*float64
 
 	_jsii_.Invoke(
@@ -618,6 +666,9 @@ func (c *jsiiProxy_CloudinitConfig) GetNumberMapAttribute(terraformAttribute *st
 }
 
 func (c *jsiiProxy_CloudinitConfig) GetStringAttribute(terraformAttribute *string) *string {
+	if err := c.validateGetStringAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *string
 
 	_jsii_.Invoke(
@@ -631,6 +682,9 @@ func (c *jsiiProxy_CloudinitConfig) GetStringAttribute(terraformAttribute *strin
 }
 
 func (c *jsiiProxy_CloudinitConfig) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+	if err := c.validateGetStringMapAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns *map[string]*string
 
 	_jsii_.Invoke(
@@ -644,6 +698,9 @@ func (c *jsiiProxy_CloudinitConfig) GetStringMapAttribute(terraformAttribute *st
 }
 
 func (c *jsiiProxy_CloudinitConfig) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := c.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
+		panic(err)
+	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
@@ -657,6 +714,9 @@ func (c *jsiiProxy_CloudinitConfig) InterpolationForAttribute(terraformAttribute
 }
 
 func (c *jsiiProxy_CloudinitConfig) OverrideLogicalId(newLogicalId *string) {
+	if err := c.validateOverrideLogicalIdParameters(newLogicalId); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		c,
 		"overrideLogicalId",
@@ -665,6 +725,9 @@ func (c *jsiiProxy_CloudinitConfig) OverrideLogicalId(newLogicalId *string) {
 }
 
 func (c *jsiiProxy_CloudinitConfig) PutPart(value interface{}) {
+	if err := c.validatePutPartParameters(value); err != nil {
+		panic(err)
+	}
 	_jsii_.InvokeVoid(
 		c,
 		"putPart",
