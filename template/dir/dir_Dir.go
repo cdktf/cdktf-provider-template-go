@@ -2,10 +2,10 @@ package dir
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-template-go/template/v3/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-template-go/template/v4/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-template-go/template/v3/dir/internal"
+	"github.com/cdktf/cdktf-provider-template-go/template/v4/dir/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -522,6 +522,44 @@ func Dir_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-template.dir.Dir",
 		"isConstruct",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func Dir_IsTerraformElement(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateDir_IsTerraformElementParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-template.dir.Dir",
+		"isTerraformElement",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func Dir_IsTerraformResource(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateDir_IsTerraformResourceParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-template.dir.Dir",
+		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
 	)

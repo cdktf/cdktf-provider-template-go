@@ -1,5 +1,4 @@
 //go:build no_runtime_type_checking
-// +build no_runtime_type_checking
 
 package cloudinitconfig
 
@@ -58,6 +57,14 @@ func (c *jsiiProxy_CloudinitConfig) validatePutPartParameters(value interface{})
 }
 
 func validateCloudinitConfig_IsConstructParameters(x interface{}) error {
+	return nil
+}
+
+func validateCloudinitConfig_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateCloudinitConfig_IsTerraformResourceParameters(x interface{}) error {
 	return nil
 }
 

@@ -1,5 +1,4 @@
 //go:build no_runtime_type_checking
-// +build no_runtime_type_checking
 
 package datatemplatecloudinitconfig
 
@@ -58,6 +57,14 @@ func (d *jsiiProxy_DataTemplateCloudinitConfig) validatePutPartParameters(value 
 }
 
 func validateDataTemplateCloudinitConfig_IsConstructParameters(x interface{}) error {
+	return nil
+}
+
+func validateDataTemplateCloudinitConfig_IsTerraformDataSourceParameters(x interface{}) error {
+	return nil
+}
+
+func validateDataTemplateCloudinitConfig_IsTerraformElementParameters(x interface{}) error {
 	return nil
 }
 

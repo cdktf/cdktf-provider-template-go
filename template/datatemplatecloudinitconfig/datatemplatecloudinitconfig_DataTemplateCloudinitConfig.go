@@ -2,10 +2,10 @@ package datatemplatecloudinitconfig
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-template-go/template/v3/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-template-go/template/v4/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-template-go/template/v3/datatemplatecloudinitconfig/internal"
+	"github.com/cdktf/cdktf-provider-template-go/template/v4/datatemplatecloudinitconfig/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -473,6 +473,44 @@ func DataTemplateCloudinitConfig_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-template.dataTemplateCloudinitConfig.DataTemplateCloudinitConfig",
 		"isConstruct",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func DataTemplateCloudinitConfig_IsTerraformDataSource(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateDataTemplateCloudinitConfig_IsTerraformDataSourceParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-template.dataTemplateCloudinitConfig.DataTemplateCloudinitConfig",
+		"isTerraformDataSource",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func DataTemplateCloudinitConfig_IsTerraformElement(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateDataTemplateCloudinitConfig_IsTerraformElementParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-template.dataTemplateCloudinitConfig.DataTemplateCloudinitConfig",
+		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
 	)

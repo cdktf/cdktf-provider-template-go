@@ -1,5 +1,4 @@
 //go:build no_runtime_type_checking
-// +build no_runtime_type_checking
 
 package datatemplatefile
 
@@ -54,6 +53,14 @@ func (d *jsiiProxy_DataTemplateFile) validateOverrideLogicalIdParameters(newLogi
 }
 
 func validateDataTemplateFile_IsConstructParameters(x interface{}) error {
+	return nil
+}
+
+func validateDataTemplateFile_IsTerraformDataSourceParameters(x interface{}) error {
+	return nil
+}
+
+func validateDataTemplateFile_IsTerraformElementParameters(x interface{}) error {
 	return nil
 }
 

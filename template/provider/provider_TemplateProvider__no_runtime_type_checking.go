@@ -1,5 +1,4 @@
 //go:build no_runtime_type_checking
-// +build no_runtime_type_checking
 
 package provider
 
@@ -14,6 +13,14 @@ func (t *jsiiProxy_TemplateProvider) validateOverrideLogicalIdParameters(newLogi
 }
 
 func validateTemplateProvider_IsConstructParameters(x interface{}) error {
+	return nil
+}
+
+func validateTemplateProvider_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateTemplateProvider_IsTerraformProviderParameters(x interface{}) error {
 	return nil
 }
 

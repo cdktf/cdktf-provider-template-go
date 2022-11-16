@@ -1,5 +1,4 @@
 //go:build no_runtime_type_checking
-// +build no_runtime_type_checking
 
 package dir
 
@@ -54,6 +53,14 @@ func (d *jsiiProxy_Dir) validateOverrideLogicalIdParameters(newLogicalId *string
 }
 
 func validateDir_IsConstructParameters(x interface{}) error {
+	return nil
+}
+
+func validateDir_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateDir_IsTerraformResourceParameters(x interface{}) error {
 	return nil
 }
 
