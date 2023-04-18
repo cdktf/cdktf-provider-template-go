@@ -64,6 +64,10 @@ func validateDataTemplateFile_IsTerraformElementParameters(x interface{}) error 
 	return nil
 }
 
+func (j *jsiiProxy_DataTemplateFile) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataTemplateFile) validateSetFilenameParameters(val *string) error {
 	return nil
 }

@@ -1,6 +1,6 @@
 //go:build !no_runtime_type_checking
 
-package cloudinitconfig
+package dir
 
 import (
 	"fmt"
@@ -11,7 +11,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-func (c *jsiiProxy_CloudinitConfig) validateAddOverrideParameters(path *string, value interface{}) error {
+func (d *jsiiProxy_Dir) validateAddOverrideParameters(path *string, value interface{}) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -23,7 +23,7 @@ func (c *jsiiProxy_CloudinitConfig) validateAddOverrideParameters(path *string, 
 	return nil
 }
 
-func (c *jsiiProxy_CloudinitConfig) validateGetAnyMapAttributeParameters(terraformAttribute *string) error {
+func (d *jsiiProxy_Dir) validateGetAnyMapAttributeParameters(terraformAttribute *string) error {
 	if terraformAttribute == nil {
 		return fmt.Errorf("parameter terraformAttribute is required, but nil was provided")
 	}
@@ -31,7 +31,7 @@ func (c *jsiiProxy_CloudinitConfig) validateGetAnyMapAttributeParameters(terrafo
 	return nil
 }
 
-func (c *jsiiProxy_CloudinitConfig) validateGetBooleanAttributeParameters(terraformAttribute *string) error {
+func (d *jsiiProxy_Dir) validateGetBooleanAttributeParameters(terraformAttribute *string) error {
 	if terraformAttribute == nil {
 		return fmt.Errorf("parameter terraformAttribute is required, but nil was provided")
 	}
@@ -39,7 +39,7 @@ func (c *jsiiProxy_CloudinitConfig) validateGetBooleanAttributeParameters(terraf
 	return nil
 }
 
-func (c *jsiiProxy_CloudinitConfig) validateGetBooleanMapAttributeParameters(terraformAttribute *string) error {
+func (d *jsiiProxy_Dir) validateGetBooleanMapAttributeParameters(terraformAttribute *string) error {
 	if terraformAttribute == nil {
 		return fmt.Errorf("parameter terraformAttribute is required, but nil was provided")
 	}
@@ -47,7 +47,7 @@ func (c *jsiiProxy_CloudinitConfig) validateGetBooleanMapAttributeParameters(ter
 	return nil
 }
 
-func (c *jsiiProxy_CloudinitConfig) validateGetListAttributeParameters(terraformAttribute *string) error {
+func (d *jsiiProxy_Dir) validateGetListAttributeParameters(terraformAttribute *string) error {
 	if terraformAttribute == nil {
 		return fmt.Errorf("parameter terraformAttribute is required, but nil was provided")
 	}
@@ -55,7 +55,7 @@ func (c *jsiiProxy_CloudinitConfig) validateGetListAttributeParameters(terraform
 	return nil
 }
 
-func (c *jsiiProxy_CloudinitConfig) validateGetNumberAttributeParameters(terraformAttribute *string) error {
+func (d *jsiiProxy_Dir) validateGetNumberAttributeParameters(terraformAttribute *string) error {
 	if terraformAttribute == nil {
 		return fmt.Errorf("parameter terraformAttribute is required, but nil was provided")
 	}
@@ -63,7 +63,7 @@ func (c *jsiiProxy_CloudinitConfig) validateGetNumberAttributeParameters(terrafo
 	return nil
 }
 
-func (c *jsiiProxy_CloudinitConfig) validateGetNumberListAttributeParameters(terraformAttribute *string) error {
+func (d *jsiiProxy_Dir) validateGetNumberListAttributeParameters(terraformAttribute *string) error {
 	if terraformAttribute == nil {
 		return fmt.Errorf("parameter terraformAttribute is required, but nil was provided")
 	}
@@ -71,7 +71,7 @@ func (c *jsiiProxy_CloudinitConfig) validateGetNumberListAttributeParameters(ter
 	return nil
 }
 
-func (c *jsiiProxy_CloudinitConfig) validateGetNumberMapAttributeParameters(terraformAttribute *string) error {
+func (d *jsiiProxy_Dir) validateGetNumberMapAttributeParameters(terraformAttribute *string) error {
 	if terraformAttribute == nil {
 		return fmt.Errorf("parameter terraformAttribute is required, but nil was provided")
 	}
@@ -79,7 +79,7 @@ func (c *jsiiProxy_CloudinitConfig) validateGetNumberMapAttributeParameters(terr
 	return nil
 }
 
-func (c *jsiiProxy_CloudinitConfig) validateGetStringAttributeParameters(terraformAttribute *string) error {
+func (d *jsiiProxy_Dir) validateGetStringAttributeParameters(terraformAttribute *string) error {
 	if terraformAttribute == nil {
 		return fmt.Errorf("parameter terraformAttribute is required, but nil was provided")
 	}
@@ -87,7 +87,7 @@ func (c *jsiiProxy_CloudinitConfig) validateGetStringAttributeParameters(terrafo
 	return nil
 }
 
-func (c *jsiiProxy_CloudinitConfig) validateGetStringMapAttributeParameters(terraformAttribute *string) error {
+func (d *jsiiProxy_Dir) validateGetStringMapAttributeParameters(terraformAttribute *string) error {
 	if terraformAttribute == nil {
 		return fmt.Errorf("parameter terraformAttribute is required, but nil was provided")
 	}
@@ -95,7 +95,7 @@ func (c *jsiiProxy_CloudinitConfig) validateGetStringMapAttributeParameters(terr
 	return nil
 }
 
-func (c *jsiiProxy_CloudinitConfig) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+func (d *jsiiProxy_Dir) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	if terraformAttribute == nil {
 		return fmt.Errorf("parameter terraformAttribute is required, but nil was provided")
 	}
@@ -103,7 +103,7 @@ func (c *jsiiProxy_CloudinitConfig) validateInterpolationForAttributeParameters(
 	return nil
 }
 
-func (c *jsiiProxy_CloudinitConfig) validateOverrideLogicalIdParameters(newLogicalId *string) error {
+func (d *jsiiProxy_Dir) validateOverrideLogicalIdParameters(newLogicalId *string) error {
 	if newLogicalId == nil {
 		return fmt.Errorf("parameter newLogicalId is required, but nil was provided")
 	}
@@ -111,38 +111,7 @@ func (c *jsiiProxy_CloudinitConfig) validateOverrideLogicalIdParameters(newLogic
 	return nil
 }
 
-func (c *jsiiProxy_CloudinitConfig) validatePutPartParameters(value interface{}) error {
-	if value == nil {
-		return fmt.Errorf("parameter value is required, but nil was provided")
-	}
-	switch value.(type) {
-	case cdktf.IResolvable:
-		// ok
-	case *[]*CloudinitConfigPart:
-		value := value.(*[]*CloudinitConfigPart)
-		for idx_cd4240, v := range *value {
-			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter value[%#v]", idx_cd4240) }); err != nil {
-				return err
-			}
-		}
-	case []*CloudinitConfigPart:
-		value_ := value.([]*CloudinitConfigPart)
-		value := &value_
-		for idx_cd4240, v := range *value {
-			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter value[%#v]", idx_cd4240) }); err != nil {
-				return err
-			}
-		}
-	default:
-		if !_jsii_.IsAnonymousProxy(value) {
-			return fmt.Errorf("parameter value must be one of the allowed types: cdktf.IResolvable, *[]*CloudinitConfigPart; received %#v (a %T)", value, value)
-		}
-	}
-
-	return nil
-}
-
-func validateCloudinitConfig_IsConstructParameters(x interface{}) error {
+func validateDir_IsConstructParameters(x interface{}) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -150,7 +119,7 @@ func validateCloudinitConfig_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
-func validateCloudinitConfig_IsTerraformElementParameters(x interface{}) error {
+func validateDir_IsTerraformElementParameters(x interface{}) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -158,7 +127,7 @@ func validateCloudinitConfig_IsTerraformElementParameters(x interface{}) error {
 	return nil
 }
 
-func validateCloudinitConfig_IsTerraformResourceParameters(x interface{}) error {
+func validateDir_IsTerraformResourceParameters(x interface{}) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -166,27 +135,7 @@ func validateCloudinitConfig_IsTerraformResourceParameters(x interface{}) error 
 	return nil
 }
 
-func (j *jsiiProxy_CloudinitConfig) validateSetBase64EncodeParameters(val interface{}) error {
-	if val == nil {
-		return fmt.Errorf("parameter val is required, but nil was provided")
-	}
-	switch val.(type) {
-	case *bool:
-		// ok
-	case bool:
-		// ok
-	case cdktf.IResolvable:
-		// ok
-	default:
-		if !_jsii_.IsAnonymousProxy(val) {
-			return fmt.Errorf("parameter val must be one of the allowed types: *bool, cdktf.IResolvable; received %#v (a %T)", val, val)
-		}
-	}
-
-	return nil
-}
-
-func (j *jsiiProxy_CloudinitConfig) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_Dir) validateSetConnectionParameters(val interface{}) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -219,27 +168,64 @@ func (j *jsiiProxy_CloudinitConfig) validateSetConnectionParameters(val interfac
 	return nil
 }
 
-func (j *jsiiProxy_CloudinitConfig) validateSetGzipParameters(val interface{}) error {
-	if val == nil {
-		return fmt.Errorf("parameter val is required, but nil was provided")
-	}
+func (j *jsiiProxy_Dir) validateSetCountParameters(val interface{}) error {
 	switch val.(type) {
-	case *bool:
+	case *float64:
 		// ok
-	case bool:
+	case float64:
 		// ok
-	case cdktf.IResolvable:
+	case *int:
+		// ok
+	case int:
+		// ok
+	case *uint:
+		// ok
+	case uint:
+		// ok
+	case *int8:
+		// ok
+	case int8:
+		// ok
+	case *int16:
+		// ok
+	case int16:
+		// ok
+	case *int32:
+		// ok
+	case int32:
+		// ok
+	case *int64:
+		// ok
+	case int64:
+		// ok
+	case *uint8:
+		// ok
+	case uint8:
+		// ok
+	case *uint16:
+		// ok
+	case uint16:
+		// ok
+	case *uint32:
+		// ok
+	case uint32:
+		// ok
+	case *uint64:
+		// ok
+	case uint64:
+		// ok
+	case cdktf.TerraformCount:
 		// ok
 	default:
 		if !_jsii_.IsAnonymousProxy(val) {
-			return fmt.Errorf("parameter val must be one of the allowed types: *bool, cdktf.IResolvable; received %#v (a %T)", val, val)
+			return fmt.Errorf("parameter val must be one of the allowed types: *float64, cdktf.TerraformCount; received %#v (a %T)", val, val)
 		}
 	}
 
 	return nil
 }
 
-func (j *jsiiProxy_CloudinitConfig) validateSetIdParameters(val *string) error {
+func (j *jsiiProxy_Dir) validateSetDestinationDirParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -247,7 +233,15 @@ func (j *jsiiProxy_CloudinitConfig) validateSetIdParameters(val *string) error {
 	return nil
 }
 
-func (j *jsiiProxy_CloudinitConfig) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_Dir) validateSetIdParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_Dir) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
 	if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
 		return err
 	}
@@ -255,7 +249,7 @@ func (j *jsiiProxy_CloudinitConfig) validateSetLifecycleParameters(val *cdktf.Te
 	return nil
 }
 
-func (j *jsiiProxy_CloudinitConfig) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_Dir) validateSetProvisionersParameters(val *[]interface{}) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -301,7 +295,23 @@ func (j *jsiiProxy_CloudinitConfig) validateSetProvisionersParameters(val *[]int
 	return nil
 }
 
-func validateNewCloudinitConfigParameters(scope constructs.Construct, id *string, config *CloudinitConfigConfig) error {
+func (j *jsiiProxy_Dir) validateSetSourceDirParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_Dir) validateSetVarsParameters(val *map[string]*string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func validateNewDirParameters(scope constructs.Construct, id *string, config *DirConfig) error {
 	if scope == nil {
 		return fmt.Errorf("parameter scope is required, but nil was provided")
 	}

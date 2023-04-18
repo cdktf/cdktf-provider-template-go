@@ -1,14 +1,14 @@
-package datatemplatecloudinitconfig
+package cloudinitconfig
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-template-go/template/v5/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-template-go/template/v6/jsii"
 
-	"github.com/cdktf/cdktf-provider-template-go/template/v5/datatemplatecloudinitconfig/internal"
+	"github.com/cdktf/cdktf-provider-template-go/template/v6/cloudinitconfig/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-type DataTemplateCloudinitConfigPartList interface {
+type CloudinitConfigPartList interface {
 	cdktf.ComplexList
 	// The creation stack of this resolvable which will be appended to errors thrown during resolution.
 	//
@@ -30,7 +30,7 @@ type DataTemplateCloudinitConfigPartList interface {
 	SetWrapsSet(val *bool)
 	// Experimental.
 	ComputeFqn() *string
-	Get(index *float64) DataTemplateCloudinitConfigPartOutputReference
+	Get(index *float64) CloudinitConfigPartOutputReference
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -41,12 +41,12 @@ type DataTemplateCloudinitConfigPartList interface {
 	ToString() *string
 }
 
-// The jsii proxy struct for DataTemplateCloudinitConfigPartList
-type jsiiProxy_DataTemplateCloudinitConfigPartList struct {
+// The jsii proxy struct for CloudinitConfigPartList
+type jsiiProxy_CloudinitConfigPartList struct {
 	internal.Type__cdktfComplexList
 }
 
-func (j *jsiiProxy_DataTemplateCloudinitConfigPartList) CreationStack() *[]*string {
+func (j *jsiiProxy_CloudinitConfigPartList) CreationStack() *[]*string {
 	var returns *[]*string
 	_jsii_.Get(
 		j,
@@ -56,7 +56,7 @@ func (j *jsiiProxy_DataTemplateCloudinitConfigPartList) CreationStack() *[]*stri
 	return returns
 }
 
-func (j *jsiiProxy_DataTemplateCloudinitConfigPartList) Fqn() *string {
+func (j *jsiiProxy_CloudinitConfigPartList) Fqn() *string {
 	var returns *string
 	_jsii_.Get(
 		j,
@@ -66,7 +66,7 @@ func (j *jsiiProxy_DataTemplateCloudinitConfigPartList) Fqn() *string {
 	return returns
 }
 
-func (j *jsiiProxy_DataTemplateCloudinitConfigPartList) InternalValue() interface{} {
+func (j *jsiiProxy_CloudinitConfigPartList) InternalValue() interface{} {
 	var returns interface{}
 	_jsii_.Get(
 		j,
@@ -76,7 +76,7 @@ func (j *jsiiProxy_DataTemplateCloudinitConfigPartList) InternalValue() interfac
 	return returns
 }
 
-func (j *jsiiProxy_DataTemplateCloudinitConfigPartList) TerraformAttribute() *string {
+func (j *jsiiProxy_CloudinitConfigPartList) TerraformAttribute() *string {
 	var returns *string
 	_jsii_.Get(
 		j,
@@ -86,7 +86,7 @@ func (j *jsiiProxy_DataTemplateCloudinitConfigPartList) TerraformAttribute() *st
 	return returns
 }
 
-func (j *jsiiProxy_DataTemplateCloudinitConfigPartList) TerraformResource() cdktf.IInterpolatingParent {
+func (j *jsiiProxy_CloudinitConfigPartList) TerraformResource() cdktf.IInterpolatingParent {
 	var returns cdktf.IInterpolatingParent
 	_jsii_.Get(
 		j,
@@ -96,7 +96,7 @@ func (j *jsiiProxy_DataTemplateCloudinitConfigPartList) TerraformResource() cdkt
 	return returns
 }
 
-func (j *jsiiProxy_DataTemplateCloudinitConfigPartList) WrapsSet() *bool {
+func (j *jsiiProxy_CloudinitConfigPartList) WrapsSet() *bool {
 	var returns *bool
 	_jsii_.Get(
 		j,
@@ -107,16 +107,16 @@ func (j *jsiiProxy_DataTemplateCloudinitConfigPartList) WrapsSet() *bool {
 }
 
 
-func NewDataTemplateCloudinitConfigPartList(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataTemplateCloudinitConfigPartList {
+func NewCloudinitConfigPartList(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) CloudinitConfigPartList {
 	_init_.Initialize()
 
-	if err := validateNewDataTemplateCloudinitConfigPartListParameters(terraformResource, terraformAttribute, wrapsSet); err != nil {
+	if err := validateNewCloudinitConfigPartListParameters(terraformResource, terraformAttribute, wrapsSet); err != nil {
 		panic(err)
 	}
-	j := jsiiProxy_DataTemplateCloudinitConfigPartList{}
+	j := jsiiProxy_CloudinitConfigPartList{}
 
 	_jsii_.Create(
-		"@cdktf/provider-template.dataTemplateCloudinitConfig.DataTemplateCloudinitConfigPartList",
+		"@cdktf/provider-template.cloudinitConfig.CloudinitConfigPartList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -124,17 +124,17 @@ func NewDataTemplateCloudinitConfigPartList(terraformResource cdktf.IInterpolati
 	return &j
 }
 
-func NewDataTemplateCloudinitConfigPartList_Override(d DataTemplateCloudinitConfigPartList, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) {
+func NewCloudinitConfigPartList_Override(c CloudinitConfigPartList, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-template.dataTemplateCloudinitConfig.DataTemplateCloudinitConfigPartList",
+		"@cdktf/provider-template.cloudinitConfig.CloudinitConfigPartList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
-		d,
+		c,
 	)
 }
 
-func (j *jsiiProxy_DataTemplateCloudinitConfigPartList)SetInternalValue(val interface{}) {
+func (j *jsiiProxy_CloudinitConfigPartList)SetInternalValue(val interface{}) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -145,7 +145,7 @@ func (j *jsiiProxy_DataTemplateCloudinitConfigPartList)SetInternalValue(val inte
 	)
 }
 
-func (j *jsiiProxy_DataTemplateCloudinitConfigPartList)SetTerraformAttribute(val *string) {
+func (j *jsiiProxy_CloudinitConfigPartList)SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
 	}
@@ -156,7 +156,7 @@ func (j *jsiiProxy_DataTemplateCloudinitConfigPartList)SetTerraformAttribute(val
 	)
 }
 
-func (j *jsiiProxy_DataTemplateCloudinitConfigPartList)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_CloudinitConfigPartList)SetTerraformResource(val cdktf.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -167,7 +167,7 @@ func (j *jsiiProxy_DataTemplateCloudinitConfigPartList)SetTerraformResource(val 
 	)
 }
 
-func (j *jsiiProxy_DataTemplateCloudinitConfigPartList)SetWrapsSet(val *bool) {
+func (j *jsiiProxy_CloudinitConfigPartList)SetWrapsSet(val *bool) {
 	if err := j.validateSetWrapsSetParameters(val); err != nil {
 		panic(err)
 	}
@@ -178,11 +178,11 @@ func (j *jsiiProxy_DataTemplateCloudinitConfigPartList)SetWrapsSet(val *bool) {
 	)
 }
 
-func (d *jsiiProxy_DataTemplateCloudinitConfigPartList) ComputeFqn() *string {
+func (c *jsiiProxy_CloudinitConfigPartList) ComputeFqn() *string {
 	var returns *string
 
 	_jsii_.Invoke(
-		d,
+		c,
 		"computeFqn",
 		nil, // no parameters
 		&returns,
@@ -191,14 +191,14 @@ func (d *jsiiProxy_DataTemplateCloudinitConfigPartList) ComputeFqn() *string {
 	return returns
 }
 
-func (d *jsiiProxy_DataTemplateCloudinitConfigPartList) Get(index *float64) DataTemplateCloudinitConfigPartOutputReference {
-	if err := d.validateGetParameters(index); err != nil {
+func (c *jsiiProxy_CloudinitConfigPartList) Get(index *float64) CloudinitConfigPartOutputReference {
+	if err := c.validateGetParameters(index); err != nil {
 		panic(err)
 	}
-	var returns DataTemplateCloudinitConfigPartOutputReference
+	var returns CloudinitConfigPartOutputReference
 
 	_jsii_.Invoke(
-		d,
+		c,
 		"get",
 		[]interface{}{index},
 		&returns,
@@ -207,14 +207,14 @@ func (d *jsiiProxy_DataTemplateCloudinitConfigPartList) Get(index *float64) Data
 	return returns
 }
 
-func (d *jsiiProxy_DataTemplateCloudinitConfigPartList) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := d.validateResolveParameters(_context); err != nil {
+func (c *jsiiProxy_CloudinitConfigPartList) Resolve(_context cdktf.IResolveContext) interface{} {
+	if err := c.validateResolveParameters(_context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
 
 	_jsii_.Invoke(
-		d,
+		c,
 		"resolve",
 		[]interface{}{_context},
 		&returns,
@@ -223,11 +223,11 @@ func (d *jsiiProxy_DataTemplateCloudinitConfigPartList) Resolve(_context cdktf.I
 	return returns
 }
 
-func (d *jsiiProxy_DataTemplateCloudinitConfigPartList) ToString() *string {
+func (c *jsiiProxy_CloudinitConfigPartList) ToString() *string {
 	var returns *string
 
 	_jsii_.Invoke(
-		d,
+		c,
 		"toString",
 		nil, // no parameters
 		&returns,

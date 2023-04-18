@@ -2,14 +2,14 @@ package provider
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-template-go/template/v5/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-template-go/template/v6/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-template-go/template/v5/provider/internal"
+	"github.com/cdktf/cdktf-provider-template-go/template/v6/provider/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/template template}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/template/2.2.0/docs template}.
 type TemplateProvider interface {
 	cdktf.TerraformProvider
 	Alias() *string
@@ -180,7 +180,7 @@ func (j *jsiiProxy_TemplateProvider) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/template template} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/template/2.2.0/docs template} Resource.
 func NewTemplateProvider(scope constructs.Construct, id *string, config *TemplateProviderConfig) TemplateProvider {
 	_init_.Initialize()
 
@@ -198,7 +198,7 @@ func NewTemplateProvider(scope constructs.Construct, id *string, config *Templat
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/template template} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/template/2.2.0/docs template} Resource.
 func NewTemplateProvider_Override(t TemplateProvider, scope constructs.Construct, id *string, config *TemplateProviderConfig) {
 	_init_.Initialize()
 

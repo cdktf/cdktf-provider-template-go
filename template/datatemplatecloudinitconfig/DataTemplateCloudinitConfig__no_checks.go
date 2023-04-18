@@ -72,6 +72,10 @@ func (j *jsiiProxy_DataTemplateCloudinitConfig) validateSetBase64EncodeParameter
 	return nil
 }
 
+func (j *jsiiProxy_DataTemplateCloudinitConfig) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataTemplateCloudinitConfig) validateSetGzipParameters(val interface{}) error {
 	return nil
 }

@@ -1,25 +1,29 @@
-package datatemplatefile
+package file
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-template-go/template/v5/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-template-go/template/v6/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-template-go/template/v5/datatemplatefile/internal"
+	"github.com/cdktf/cdktf-provider-template-go/template/v6/file/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/template/d/file template_file}.
-type DataTemplateFile interface {
-	cdktf.TerraformDataSource
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/template/2.2.0/docs/resources/file template_file}.
+type File interface {
+	cdktf.TerraformResource
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
+	Connection() interface{}
+	// Experimental.
+	SetConnection(val interface{})
+	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -48,6 +52,10 @@ type DataTemplateFile interface {
 	Provider() cdktf.TerraformProvider
 	// Experimental.
 	SetProvider(val cdktf.TerraformProvider)
+	// Experimental.
+	Provisioners() *[]interface{}
+	// Experimental.
+	SetProvisioners(val *[]interface{})
 	// Experimental.
 	RawOverrides() interface{}
 	Rendered() *string
@@ -105,12 +113,12 @@ type DataTemplateFile interface {
 	ToTerraform() interface{}
 }
 
-// The jsii proxy struct for DataTemplateFile
-type jsiiProxy_DataTemplateFile struct {
-	internal.Type__cdktfTerraformDataSource
+// The jsii proxy struct for File
+type jsiiProxy_File struct {
+	internal.Type__cdktfTerraformResource
 }
 
-func (j *jsiiProxy_DataTemplateFile) CdktfStack() cdktf.TerraformStack {
+func (j *jsiiProxy_File) CdktfStack() cdktf.TerraformStack {
 	var returns cdktf.TerraformStack
 	_jsii_.Get(
 		j,
@@ -120,7 +128,17 @@ func (j *jsiiProxy_DataTemplateFile) CdktfStack() cdktf.TerraformStack {
 	return returns
 }
 
-func (j *jsiiProxy_DataTemplateFile) ConstructNodeMetadata() *map[string]interface{} {
+func (j *jsiiProxy_File) Connection() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"connection",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_File) ConstructNodeMetadata() *map[string]interface{} {
 	var returns *map[string]interface{}
 	_jsii_.Get(
 		j,
@@ -130,8 +148,8 @@ func (j *jsiiProxy_DataTemplateFile) ConstructNodeMetadata() *map[string]interfa
 	return returns
 }
 
-func (j *jsiiProxy_DataTemplateFile) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_File) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -140,7 +158,7 @@ func (j *jsiiProxy_DataTemplateFile) Count() *float64 {
 	return returns
 }
 
-func (j *jsiiProxy_DataTemplateFile) DependsOn() *[]*string {
+func (j *jsiiProxy_File) DependsOn() *[]*string {
 	var returns *[]*string
 	_jsii_.Get(
 		j,
@@ -150,7 +168,7 @@ func (j *jsiiProxy_DataTemplateFile) DependsOn() *[]*string {
 	return returns
 }
 
-func (j *jsiiProxy_DataTemplateFile) Filename() *string {
+func (j *jsiiProxy_File) Filename() *string {
 	var returns *string
 	_jsii_.Get(
 		j,
@@ -160,7 +178,7 @@ func (j *jsiiProxy_DataTemplateFile) Filename() *string {
 	return returns
 }
 
-func (j *jsiiProxy_DataTemplateFile) FilenameInput() *string {
+func (j *jsiiProxy_File) FilenameInput() *string {
 	var returns *string
 	_jsii_.Get(
 		j,
@@ -170,7 +188,7 @@ func (j *jsiiProxy_DataTemplateFile) FilenameInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_DataTemplateFile) ForEach() cdktf.ITerraformIterator {
+func (j *jsiiProxy_File) ForEach() cdktf.ITerraformIterator {
 	var returns cdktf.ITerraformIterator
 	_jsii_.Get(
 		j,
@@ -180,7 +198,7 @@ func (j *jsiiProxy_DataTemplateFile) ForEach() cdktf.ITerraformIterator {
 	return returns
 }
 
-func (j *jsiiProxy_DataTemplateFile) Fqn() *string {
+func (j *jsiiProxy_File) Fqn() *string {
 	var returns *string
 	_jsii_.Get(
 		j,
@@ -190,7 +208,7 @@ func (j *jsiiProxy_DataTemplateFile) Fqn() *string {
 	return returns
 }
 
-func (j *jsiiProxy_DataTemplateFile) FriendlyUniqueId() *string {
+func (j *jsiiProxy_File) FriendlyUniqueId() *string {
 	var returns *string
 	_jsii_.Get(
 		j,
@@ -200,7 +218,7 @@ func (j *jsiiProxy_DataTemplateFile) FriendlyUniqueId() *string {
 	return returns
 }
 
-func (j *jsiiProxy_DataTemplateFile) Id() *string {
+func (j *jsiiProxy_File) Id() *string {
 	var returns *string
 	_jsii_.Get(
 		j,
@@ -210,7 +228,7 @@ func (j *jsiiProxy_DataTemplateFile) Id() *string {
 	return returns
 }
 
-func (j *jsiiProxy_DataTemplateFile) IdInput() *string {
+func (j *jsiiProxy_File) IdInput() *string {
 	var returns *string
 	_jsii_.Get(
 		j,
@@ -220,7 +238,7 @@ func (j *jsiiProxy_DataTemplateFile) IdInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_DataTemplateFile) Lifecycle() *cdktf.TerraformResourceLifecycle {
+func (j *jsiiProxy_File) Lifecycle() *cdktf.TerraformResourceLifecycle {
 	var returns *cdktf.TerraformResourceLifecycle
 	_jsii_.Get(
 		j,
@@ -230,7 +248,7 @@ func (j *jsiiProxy_DataTemplateFile) Lifecycle() *cdktf.TerraformResourceLifecyc
 	return returns
 }
 
-func (j *jsiiProxy_DataTemplateFile) Node() constructs.Node {
+func (j *jsiiProxy_File) Node() constructs.Node {
 	var returns constructs.Node
 	_jsii_.Get(
 		j,
@@ -240,7 +258,7 @@ func (j *jsiiProxy_DataTemplateFile) Node() constructs.Node {
 	return returns
 }
 
-func (j *jsiiProxy_DataTemplateFile) Provider() cdktf.TerraformProvider {
+func (j *jsiiProxy_File) Provider() cdktf.TerraformProvider {
 	var returns cdktf.TerraformProvider
 	_jsii_.Get(
 		j,
@@ -250,7 +268,17 @@ func (j *jsiiProxy_DataTemplateFile) Provider() cdktf.TerraformProvider {
 	return returns
 }
 
-func (j *jsiiProxy_DataTemplateFile) RawOverrides() interface{} {
+func (j *jsiiProxy_File) Provisioners() *[]interface{} {
+	var returns *[]interface{}
+	_jsii_.Get(
+		j,
+		"provisioners",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_File) RawOverrides() interface{} {
 	var returns interface{}
 	_jsii_.Get(
 		j,
@@ -260,7 +288,7 @@ func (j *jsiiProxy_DataTemplateFile) RawOverrides() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_DataTemplateFile) Rendered() *string {
+func (j *jsiiProxy_File) Rendered() *string {
 	var returns *string
 	_jsii_.Get(
 		j,
@@ -270,7 +298,7 @@ func (j *jsiiProxy_DataTemplateFile) Rendered() *string {
 	return returns
 }
 
-func (j *jsiiProxy_DataTemplateFile) Template() *string {
+func (j *jsiiProxy_File) Template() *string {
 	var returns *string
 	_jsii_.Get(
 		j,
@@ -280,7 +308,7 @@ func (j *jsiiProxy_DataTemplateFile) Template() *string {
 	return returns
 }
 
-func (j *jsiiProxy_DataTemplateFile) TemplateInput() *string {
+func (j *jsiiProxy_File) TemplateInput() *string {
 	var returns *string
 	_jsii_.Get(
 		j,
@@ -290,7 +318,7 @@ func (j *jsiiProxy_DataTemplateFile) TemplateInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_DataTemplateFile) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
+func (j *jsiiProxy_File) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
 	var returns *cdktf.TerraformProviderGeneratorMetadata
 	_jsii_.Get(
 		j,
@@ -300,7 +328,7 @@ func (j *jsiiProxy_DataTemplateFile) TerraformGeneratorMetadata() *cdktf.Terrafo
 	return returns
 }
 
-func (j *jsiiProxy_DataTemplateFile) TerraformMetaArguments() *map[string]interface{} {
+func (j *jsiiProxy_File) TerraformMetaArguments() *map[string]interface{} {
 	var returns *map[string]interface{}
 	_jsii_.Get(
 		j,
@@ -310,7 +338,7 @@ func (j *jsiiProxy_DataTemplateFile) TerraformMetaArguments() *map[string]interf
 	return returns
 }
 
-func (j *jsiiProxy_DataTemplateFile) TerraformResourceType() *string {
+func (j *jsiiProxy_File) TerraformResourceType() *string {
 	var returns *string
 	_jsii_.Get(
 		j,
@@ -320,7 +348,7 @@ func (j *jsiiProxy_DataTemplateFile) TerraformResourceType() *string {
 	return returns
 }
 
-func (j *jsiiProxy_DataTemplateFile) Vars() *map[string]*string {
+func (j *jsiiProxy_File) Vars() *map[string]*string {
 	var returns *map[string]*string
 	_jsii_.Get(
 		j,
@@ -330,7 +358,7 @@ func (j *jsiiProxy_DataTemplateFile) Vars() *map[string]*string {
 	return returns
 }
 
-func (j *jsiiProxy_DataTemplateFile) VarsInput() *map[string]*string {
+func (j *jsiiProxy_File) VarsInput() *map[string]*string {
 	var returns *map[string]*string
 	_jsii_.Get(
 		j,
@@ -341,17 +369,17 @@ func (j *jsiiProxy_DataTemplateFile) VarsInput() *map[string]*string {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/template/d/file template_file} Data Source.
-func NewDataTemplateFile(scope constructs.Construct, id *string, config *DataTemplateFileConfig) DataTemplateFile {
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/template/2.2.0/docs/resources/file template_file} Resource.
+func NewFile(scope constructs.Construct, id *string, config *FileConfig) File {
 	_init_.Initialize()
 
-	if err := validateNewDataTemplateFileParameters(scope, id, config); err != nil {
+	if err := validateNewFileParameters(scope, id, config); err != nil {
 		panic(err)
 	}
-	j := jsiiProxy_DataTemplateFile{}
+	j := jsiiProxy_File{}
 
 	_jsii_.Create(
-		"@cdktf/provider-template.dataTemplateFile.DataTemplateFile",
+		"@cdktf/provider-template.file.File",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -359,18 +387,32 @@ func NewDataTemplateFile(scope constructs.Construct, id *string, config *DataTem
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/template/d/file template_file} Data Source.
-func NewDataTemplateFile_Override(d DataTemplateFile, scope constructs.Construct, id *string, config *DataTemplateFileConfig) {
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/template/2.2.0/docs/resources/file template_file} Resource.
+func NewFile_Override(f File, scope constructs.Construct, id *string, config *FileConfig) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-template.dataTemplateFile.DataTemplateFile",
+		"@cdktf/provider-template.file.File",
 		[]interface{}{scope, id, config},
-		d,
+		f,
 	)
 }
 
-func (j *jsiiProxy_DataTemplateFile)SetCount(val *float64) {
+func (j *jsiiProxy_File)SetConnection(val interface{}) {
+	if err := j.validateSetConnectionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"connection",
+		val,
+	)
+}
+
+func (j *jsiiProxy_File)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",
@@ -378,7 +420,7 @@ func (j *jsiiProxy_DataTemplateFile)SetCount(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_DataTemplateFile)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_File)SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -386,7 +428,7 @@ func (j *jsiiProxy_DataTemplateFile)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_DataTemplateFile)SetFilename(val *string) {
+func (j *jsiiProxy_File)SetFilename(val *string) {
 	if err := j.validateSetFilenameParameters(val); err != nil {
 		panic(err)
 	}
@@ -397,7 +439,7 @@ func (j *jsiiProxy_DataTemplateFile)SetFilename(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DataTemplateFile)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_File)SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -405,7 +447,7 @@ func (j *jsiiProxy_DataTemplateFile)SetForEach(val cdktf.ITerraformIterator) {
 	)
 }
 
-func (j *jsiiProxy_DataTemplateFile)SetId(val *string) {
+func (j *jsiiProxy_File)SetId(val *string) {
 	if err := j.validateSetIdParameters(val); err != nil {
 		panic(err)
 	}
@@ -416,7 +458,7 @@ func (j *jsiiProxy_DataTemplateFile)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DataTemplateFile)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_File)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -427,7 +469,7 @@ func (j *jsiiProxy_DataTemplateFile)SetLifecycle(val *cdktf.TerraformResourceLif
 	)
 }
 
-func (j *jsiiProxy_DataTemplateFile)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_File)SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -435,7 +477,18 @@ func (j *jsiiProxy_DataTemplateFile)SetProvider(val cdktf.TerraformProvider) {
 	)
 }
 
-func (j *jsiiProxy_DataTemplateFile)SetTemplate(val *string) {
+func (j *jsiiProxy_File)SetProvisioners(val *[]interface{}) {
+	if err := j.validateSetProvisionersParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_File)SetTemplate(val *string) {
 	if err := j.validateSetTemplateParameters(val); err != nil {
 		panic(err)
 	}
@@ -446,7 +499,7 @@ func (j *jsiiProxy_DataTemplateFile)SetTemplate(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DataTemplateFile)SetVars(val *map[string]*string) {
+func (j *jsiiProxy_File)SetVars(val *map[string]*string) {
 	if err := j.validateSetVarsParameters(val); err != nil {
 		panic(err)
 	}
@@ -474,16 +527,16 @@ func (j *jsiiProxy_DataTemplateFile)SetVars(val *map[string]*string) {
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func DataTemplateFile_IsConstruct(x interface{}) *bool {
+func File_IsConstruct(x interface{}) *bool {
 	_init_.Initialize()
 
-	if err := validateDataTemplateFile_IsConstructParameters(x); err != nil {
+	if err := validateFile_IsConstructParameters(x); err != nil {
 		panic(err)
 	}
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-template.dataTemplateFile.DataTemplateFile",
+		"@cdktf/provider-template.file.File",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -493,35 +546,16 @@ func DataTemplateFile_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func DataTemplateFile_IsTerraformDataSource(x interface{}) *bool {
+func File_IsTerraformElement(x interface{}) *bool {
 	_init_.Initialize()
 
-	if err := validateDataTemplateFile_IsTerraformDataSourceParameters(x); err != nil {
+	if err := validateFile_IsTerraformElementParameters(x); err != nil {
 		panic(err)
 	}
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-template.dataTemplateFile.DataTemplateFile",
-		"isTerraformDataSource",
-		[]interface{}{x},
-		&returns,
-	)
-
-	return returns
-}
-
-// Experimental.
-func DataTemplateFile_IsTerraformElement(x interface{}) *bool {
-	_init_.Initialize()
-
-	if err := validateDataTemplateFile_IsTerraformElementParameters(x); err != nil {
-		panic(err)
-	}
-	var returns *bool
-
-	_jsii_.StaticInvoke(
-		"@cdktf/provider-template.dataTemplateFile.DataTemplateFile",
+		"@cdktf/provider-template.file.File",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -530,36 +564,55 @@ func DataTemplateFile_IsTerraformElement(x interface{}) *bool {
 	return returns
 }
 
-func DataTemplateFile_TfResourceType() *string {
+// Experimental.
+func File_IsTerraformResource(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateFile_IsTerraformResourceParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-template.file.File",
+		"isTerraformResource",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+func File_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"@cdktf/provider-template.dataTemplateFile.DataTemplateFile",
+		"@cdktf/provider-template.file.File",
 		"tfResourceType",
 		&returns,
 	)
 	return returns
 }
 
-func (d *jsiiProxy_DataTemplateFile) AddOverride(path *string, value interface{}) {
-	if err := d.validateAddOverrideParameters(path, value); err != nil {
+func (f *jsiiProxy_File) AddOverride(path *string, value interface{}) {
+	if err := f.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
-		d,
+		f,
 		"addOverride",
 		[]interface{}{path, value},
 	)
 }
 
-func (d *jsiiProxy_DataTemplateFile) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
-	if err := d.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
+func (f *jsiiProxy_File) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+	if err := f.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
 	var returns *map[string]interface{}
 
 	_jsii_.Invoke(
-		d,
+		f,
 		"getAnyMapAttribute",
 		[]interface{}{terraformAttribute},
 		&returns,
@@ -568,14 +621,14 @@ func (d *jsiiProxy_DataTemplateFile) GetAnyMapAttribute(terraformAttribute *stri
 	return returns
 }
 
-func (d *jsiiProxy_DataTemplateFile) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
-	if err := d.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
+func (f *jsiiProxy_File) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := f.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
-		d,
+		f,
 		"getBooleanAttribute",
 		[]interface{}{terraformAttribute},
 		&returns,
@@ -584,14 +637,14 @@ func (d *jsiiProxy_DataTemplateFile) GetBooleanAttribute(terraformAttribute *str
 	return returns
 }
 
-func (d *jsiiProxy_DataTemplateFile) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
-	if err := d.validateGetBooleanMapAttributeParameters(terraformAttribute); err != nil {
+func (f *jsiiProxy_File) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+	if err := f.validateGetBooleanMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
 	var returns *map[string]*bool
 
 	_jsii_.Invoke(
-		d,
+		f,
 		"getBooleanMapAttribute",
 		[]interface{}{terraformAttribute},
 		&returns,
@@ -600,14 +653,14 @@ func (d *jsiiProxy_DataTemplateFile) GetBooleanMapAttribute(terraformAttribute *
 	return returns
 }
 
-func (d *jsiiProxy_DataTemplateFile) GetListAttribute(terraformAttribute *string) *[]*string {
-	if err := d.validateGetListAttributeParameters(terraformAttribute); err != nil {
+func (f *jsiiProxy_File) GetListAttribute(terraformAttribute *string) *[]*string {
+	if err := f.validateGetListAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
 	var returns *[]*string
 
 	_jsii_.Invoke(
-		d,
+		f,
 		"getListAttribute",
 		[]interface{}{terraformAttribute},
 		&returns,
@@ -616,14 +669,14 @@ func (d *jsiiProxy_DataTemplateFile) GetListAttribute(terraformAttribute *string
 	return returns
 }
 
-func (d *jsiiProxy_DataTemplateFile) GetNumberAttribute(terraformAttribute *string) *float64 {
-	if err := d.validateGetNumberAttributeParameters(terraformAttribute); err != nil {
+func (f *jsiiProxy_File) GetNumberAttribute(terraformAttribute *string) *float64 {
+	if err := f.validateGetNumberAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
 	var returns *float64
 
 	_jsii_.Invoke(
-		d,
+		f,
 		"getNumberAttribute",
 		[]interface{}{terraformAttribute},
 		&returns,
@@ -632,14 +685,14 @@ func (d *jsiiProxy_DataTemplateFile) GetNumberAttribute(terraformAttribute *stri
 	return returns
 }
 
-func (d *jsiiProxy_DataTemplateFile) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
-	if err := d.validateGetNumberListAttributeParameters(terraformAttribute); err != nil {
+func (f *jsiiProxy_File) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+	if err := f.validateGetNumberListAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
 	var returns *[]*float64
 
 	_jsii_.Invoke(
-		d,
+		f,
 		"getNumberListAttribute",
 		[]interface{}{terraformAttribute},
 		&returns,
@@ -648,14 +701,14 @@ func (d *jsiiProxy_DataTemplateFile) GetNumberListAttribute(terraformAttribute *
 	return returns
 }
 
-func (d *jsiiProxy_DataTemplateFile) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
-	if err := d.validateGetNumberMapAttributeParameters(terraformAttribute); err != nil {
+func (f *jsiiProxy_File) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+	if err := f.validateGetNumberMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
 	var returns *map[string]*float64
 
 	_jsii_.Invoke(
-		d,
+		f,
 		"getNumberMapAttribute",
 		[]interface{}{terraformAttribute},
 		&returns,
@@ -664,14 +717,14 @@ func (d *jsiiProxy_DataTemplateFile) GetNumberMapAttribute(terraformAttribute *s
 	return returns
 }
 
-func (d *jsiiProxy_DataTemplateFile) GetStringAttribute(terraformAttribute *string) *string {
-	if err := d.validateGetStringAttributeParameters(terraformAttribute); err != nil {
+func (f *jsiiProxy_File) GetStringAttribute(terraformAttribute *string) *string {
+	if err := f.validateGetStringAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
 	var returns *string
 
 	_jsii_.Invoke(
-		d,
+		f,
 		"getStringAttribute",
 		[]interface{}{terraformAttribute},
 		&returns,
@@ -680,14 +733,14 @@ func (d *jsiiProxy_DataTemplateFile) GetStringAttribute(terraformAttribute *stri
 	return returns
 }
 
-func (d *jsiiProxy_DataTemplateFile) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
-	if err := d.validateGetStringMapAttributeParameters(terraformAttribute); err != nil {
+func (f *jsiiProxy_File) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+	if err := f.validateGetStringMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
 	var returns *map[string]*string
 
 	_jsii_.Invoke(
-		d,
+		f,
 		"getStringMapAttribute",
 		[]interface{}{terraformAttribute},
 		&returns,
@@ -696,14 +749,14 @@ func (d *jsiiProxy_DataTemplateFile) GetStringMapAttribute(terraformAttribute *s
 	return returns
 }
 
-func (d *jsiiProxy_DataTemplateFile) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
-	if err := d.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
+func (f *jsiiProxy_File) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := f.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
-		d,
+		f,
 		"interpolationForAttribute",
 		[]interface{}{terraformAttribute},
 		&returns,
@@ -712,62 +765,62 @@ func (d *jsiiProxy_DataTemplateFile) InterpolationForAttribute(terraformAttribut
 	return returns
 }
 
-func (d *jsiiProxy_DataTemplateFile) OverrideLogicalId(newLogicalId *string) {
-	if err := d.validateOverrideLogicalIdParameters(newLogicalId); err != nil {
+func (f *jsiiProxy_File) OverrideLogicalId(newLogicalId *string) {
+	if err := f.validateOverrideLogicalIdParameters(newLogicalId); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
-		d,
+		f,
 		"overrideLogicalId",
 		[]interface{}{newLogicalId},
 	)
 }
 
-func (d *jsiiProxy_DataTemplateFile) ResetFilename() {
+func (f *jsiiProxy_File) ResetFilename() {
 	_jsii_.InvokeVoid(
-		d,
+		f,
 		"resetFilename",
 		nil, // no parameters
 	)
 }
 
-func (d *jsiiProxy_DataTemplateFile) ResetId() {
+func (f *jsiiProxy_File) ResetId() {
 	_jsii_.InvokeVoid(
-		d,
+		f,
 		"resetId",
 		nil, // no parameters
 	)
 }
 
-func (d *jsiiProxy_DataTemplateFile) ResetOverrideLogicalId() {
+func (f *jsiiProxy_File) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
-		d,
+		f,
 		"resetOverrideLogicalId",
 		nil, // no parameters
 	)
 }
 
-func (d *jsiiProxy_DataTemplateFile) ResetTemplate() {
+func (f *jsiiProxy_File) ResetTemplate() {
 	_jsii_.InvokeVoid(
-		d,
+		f,
 		"resetTemplate",
 		nil, // no parameters
 	)
 }
 
-func (d *jsiiProxy_DataTemplateFile) ResetVars() {
+func (f *jsiiProxy_File) ResetVars() {
 	_jsii_.InvokeVoid(
-		d,
+		f,
 		"resetVars",
 		nil, // no parameters
 	)
 }
 
-func (d *jsiiProxy_DataTemplateFile) SynthesizeAttributes() *map[string]interface{} {
+func (f *jsiiProxy_File) SynthesizeAttributes() *map[string]interface{} {
 	var returns *map[string]interface{}
 
 	_jsii_.Invoke(
-		d,
+		f,
 		"synthesizeAttributes",
 		nil, // no parameters
 		&returns,
@@ -776,11 +829,11 @@ func (d *jsiiProxy_DataTemplateFile) SynthesizeAttributes() *map[string]interfac
 	return returns
 }
 
-func (d *jsiiProxy_DataTemplateFile) ToMetadata() interface{} {
+func (f *jsiiProxy_File) ToMetadata() interface{} {
 	var returns interface{}
 
 	_jsii_.Invoke(
-		d,
+		f,
 		"toMetadata",
 		nil, // no parameters
 		&returns,
@@ -789,11 +842,11 @@ func (d *jsiiProxy_DataTemplateFile) ToMetadata() interface{} {
 	return returns
 }
 
-func (d *jsiiProxy_DataTemplateFile) ToString() *string {
+func (f *jsiiProxy_File) ToString() *string {
 	var returns *string
 
 	_jsii_.Invoke(
-		d,
+		f,
 		"toString",
 		nil, // no parameters
 		&returns,
@@ -802,11 +855,11 @@ func (d *jsiiProxy_DataTemplateFile) ToString() *string {
 	return returns
 }
 
-func (d *jsiiProxy_DataTemplateFile) ToTerraform() interface{} {
+func (f *jsiiProxy_File) ToTerraform() interface{} {
 	var returns interface{}
 
 	_jsii_.Invoke(
-		d,
+		f,
 		"toTerraform",
 		nil, // no parameters
 		&returns,

@@ -1,6 +1,6 @@
 //go:build !no_runtime_type_checking
 
-package dir
+package file
 
 import (
 	"fmt"
@@ -11,7 +11,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-func (d *jsiiProxy_Dir) validateAddOverrideParameters(path *string, value interface{}) error {
+func (f *jsiiProxy_File) validateAddOverrideParameters(path *string, value interface{}) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -23,7 +23,7 @@ func (d *jsiiProxy_Dir) validateAddOverrideParameters(path *string, value interf
 	return nil
 }
 
-func (d *jsiiProxy_Dir) validateGetAnyMapAttributeParameters(terraformAttribute *string) error {
+func (f *jsiiProxy_File) validateGetAnyMapAttributeParameters(terraformAttribute *string) error {
 	if terraformAttribute == nil {
 		return fmt.Errorf("parameter terraformAttribute is required, but nil was provided")
 	}
@@ -31,7 +31,7 @@ func (d *jsiiProxy_Dir) validateGetAnyMapAttributeParameters(terraformAttribute 
 	return nil
 }
 
-func (d *jsiiProxy_Dir) validateGetBooleanAttributeParameters(terraformAttribute *string) error {
+func (f *jsiiProxy_File) validateGetBooleanAttributeParameters(terraformAttribute *string) error {
 	if terraformAttribute == nil {
 		return fmt.Errorf("parameter terraformAttribute is required, but nil was provided")
 	}
@@ -39,7 +39,7 @@ func (d *jsiiProxy_Dir) validateGetBooleanAttributeParameters(terraformAttribute
 	return nil
 }
 
-func (d *jsiiProxy_Dir) validateGetBooleanMapAttributeParameters(terraformAttribute *string) error {
+func (f *jsiiProxy_File) validateGetBooleanMapAttributeParameters(terraformAttribute *string) error {
 	if terraformAttribute == nil {
 		return fmt.Errorf("parameter terraformAttribute is required, but nil was provided")
 	}
@@ -47,7 +47,7 @@ func (d *jsiiProxy_Dir) validateGetBooleanMapAttributeParameters(terraformAttrib
 	return nil
 }
 
-func (d *jsiiProxy_Dir) validateGetListAttributeParameters(terraformAttribute *string) error {
+func (f *jsiiProxy_File) validateGetListAttributeParameters(terraformAttribute *string) error {
 	if terraformAttribute == nil {
 		return fmt.Errorf("parameter terraformAttribute is required, but nil was provided")
 	}
@@ -55,7 +55,7 @@ func (d *jsiiProxy_Dir) validateGetListAttributeParameters(terraformAttribute *s
 	return nil
 }
 
-func (d *jsiiProxy_Dir) validateGetNumberAttributeParameters(terraformAttribute *string) error {
+func (f *jsiiProxy_File) validateGetNumberAttributeParameters(terraformAttribute *string) error {
 	if terraformAttribute == nil {
 		return fmt.Errorf("parameter terraformAttribute is required, but nil was provided")
 	}
@@ -63,7 +63,7 @@ func (d *jsiiProxy_Dir) validateGetNumberAttributeParameters(terraformAttribute 
 	return nil
 }
 
-func (d *jsiiProxy_Dir) validateGetNumberListAttributeParameters(terraformAttribute *string) error {
+func (f *jsiiProxy_File) validateGetNumberListAttributeParameters(terraformAttribute *string) error {
 	if terraformAttribute == nil {
 		return fmt.Errorf("parameter terraformAttribute is required, but nil was provided")
 	}
@@ -71,7 +71,7 @@ func (d *jsiiProxy_Dir) validateGetNumberListAttributeParameters(terraformAttrib
 	return nil
 }
 
-func (d *jsiiProxy_Dir) validateGetNumberMapAttributeParameters(terraformAttribute *string) error {
+func (f *jsiiProxy_File) validateGetNumberMapAttributeParameters(terraformAttribute *string) error {
 	if terraformAttribute == nil {
 		return fmt.Errorf("parameter terraformAttribute is required, but nil was provided")
 	}
@@ -79,7 +79,7 @@ func (d *jsiiProxy_Dir) validateGetNumberMapAttributeParameters(terraformAttribu
 	return nil
 }
 
-func (d *jsiiProxy_Dir) validateGetStringAttributeParameters(terraformAttribute *string) error {
+func (f *jsiiProxy_File) validateGetStringAttributeParameters(terraformAttribute *string) error {
 	if terraformAttribute == nil {
 		return fmt.Errorf("parameter terraformAttribute is required, but nil was provided")
 	}
@@ -87,7 +87,7 @@ func (d *jsiiProxy_Dir) validateGetStringAttributeParameters(terraformAttribute 
 	return nil
 }
 
-func (d *jsiiProxy_Dir) validateGetStringMapAttributeParameters(terraformAttribute *string) error {
+func (f *jsiiProxy_File) validateGetStringMapAttributeParameters(terraformAttribute *string) error {
 	if terraformAttribute == nil {
 		return fmt.Errorf("parameter terraformAttribute is required, but nil was provided")
 	}
@@ -95,7 +95,7 @@ func (d *jsiiProxy_Dir) validateGetStringMapAttributeParameters(terraformAttribu
 	return nil
 }
 
-func (d *jsiiProxy_Dir) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+func (f *jsiiProxy_File) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	if terraformAttribute == nil {
 		return fmt.Errorf("parameter terraformAttribute is required, but nil was provided")
 	}
@@ -103,7 +103,7 @@ func (d *jsiiProxy_Dir) validateInterpolationForAttributeParameters(terraformAtt
 	return nil
 }
 
-func (d *jsiiProxy_Dir) validateOverrideLogicalIdParameters(newLogicalId *string) error {
+func (f *jsiiProxy_File) validateOverrideLogicalIdParameters(newLogicalId *string) error {
 	if newLogicalId == nil {
 		return fmt.Errorf("parameter newLogicalId is required, but nil was provided")
 	}
@@ -111,7 +111,7 @@ func (d *jsiiProxy_Dir) validateOverrideLogicalIdParameters(newLogicalId *string
 	return nil
 }
 
-func validateDir_IsConstructParameters(x interface{}) error {
+func validateFile_IsConstructParameters(x interface{}) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -119,7 +119,7 @@ func validateDir_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
-func validateDir_IsTerraformElementParameters(x interface{}) error {
+func validateFile_IsTerraformElementParameters(x interface{}) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func validateDir_IsTerraformElementParameters(x interface{}) error {
 	return nil
 }
 
-func validateDir_IsTerraformResourceParameters(x interface{}) error {
+func validateFile_IsTerraformResourceParameters(x interface{}) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -135,7 +135,7 @@ func validateDir_IsTerraformResourceParameters(x interface{}) error {
 	return nil
 }
 
-func (j *jsiiProxy_Dir) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_File) validateSetConnectionParameters(val interface{}) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -168,7 +168,64 @@ func (j *jsiiProxy_Dir) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }
 
-func (j *jsiiProxy_Dir) validateSetDestinationDirParameters(val *string) error {
+func (j *jsiiProxy_File) validateSetCountParameters(val interface{}) error {
+	switch val.(type) {
+	case *float64:
+		// ok
+	case float64:
+		// ok
+	case *int:
+		// ok
+	case int:
+		// ok
+	case *uint:
+		// ok
+	case uint:
+		// ok
+	case *int8:
+		// ok
+	case int8:
+		// ok
+	case *int16:
+		// ok
+	case int16:
+		// ok
+	case *int32:
+		// ok
+	case int32:
+		// ok
+	case *int64:
+		// ok
+	case int64:
+		// ok
+	case *uint8:
+		// ok
+	case uint8:
+		// ok
+	case *uint16:
+		// ok
+	case uint16:
+		// ok
+	case *uint32:
+		// ok
+	case uint32:
+		// ok
+	case *uint64:
+		// ok
+	case uint64:
+		// ok
+	case cdktf.TerraformCount:
+		// ok
+	default:
+		if !_jsii_.IsAnonymousProxy(val) {
+			return fmt.Errorf("parameter val must be one of the allowed types: *float64, cdktf.TerraformCount; received %#v (a %T)", val, val)
+		}
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_File) validateSetFilenameParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -176,7 +233,7 @@ func (j *jsiiProxy_Dir) validateSetDestinationDirParameters(val *string) error {
 	return nil
 }
 
-func (j *jsiiProxy_Dir) validateSetIdParameters(val *string) error {
+func (j *jsiiProxy_File) validateSetIdParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -184,7 +241,7 @@ func (j *jsiiProxy_Dir) validateSetIdParameters(val *string) error {
 	return nil
 }
 
-func (j *jsiiProxy_Dir) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_File) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
 	if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
 		return err
 	}
@@ -192,7 +249,7 @@ func (j *jsiiProxy_Dir) validateSetLifecycleParameters(val *cdktf.TerraformResou
 	return nil
 }
 
-func (j *jsiiProxy_Dir) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_File) validateSetProvisionersParameters(val *[]interface{}) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -238,7 +295,7 @@ func (j *jsiiProxy_Dir) validateSetProvisionersParameters(val *[]interface{}) er
 	return nil
 }
 
-func (j *jsiiProxy_Dir) validateSetSourceDirParameters(val *string) error {
+func (j *jsiiProxy_File) validateSetTemplateParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -246,7 +303,7 @@ func (j *jsiiProxy_Dir) validateSetSourceDirParameters(val *string) error {
 	return nil
 }
 
-func (j *jsiiProxy_Dir) validateSetVarsParameters(val *map[string]*string) error {
+func (j *jsiiProxy_File) validateSetVarsParameters(val *map[string]*string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -254,7 +311,7 @@ func (j *jsiiProxy_Dir) validateSetVarsParameters(val *map[string]*string) error
 	return nil
 }
 
-func validateNewDirParameters(scope constructs.Construct, id *string, config *DirConfig) error {
+func validateNewFileParameters(scope constructs.Construct, id *string, config *FileConfig) error {
 	if scope == nil {
 		return fmt.Errorf("parameter scope is required, but nil was provided")
 	}
@@ -263,9 +320,6 @@ func validateNewDirParameters(scope constructs.Construct, id *string, config *Di
 		return fmt.Errorf("parameter id is required, but nil was provided")
 	}
 
-	if config == nil {
-		return fmt.Errorf("parameter config is required, but nil was provided")
-	}
 	if err := _jsii_.ValidateStruct(config, func() string { return "parameter config" }); err != nil {
 		return err
 	}
