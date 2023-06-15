@@ -2,10 +2,10 @@ package file
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-template-go/template/v6/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-template-go/template/v7/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-template-go/template/v6/file/internal"
+	"github.com/cdktf/cdktf-provider-template-go/template/v7/file/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
