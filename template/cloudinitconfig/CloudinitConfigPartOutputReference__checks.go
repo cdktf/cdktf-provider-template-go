@@ -1,3 +1,6 @@
+// Copyright (c) HashiCorp, Inc.
+// SPDX-License-Identifier: MPL-2.0
+
 //go:build !no_runtime_type_checking
 
 package cloudinitconfig
@@ -189,6 +192,8 @@ func (j *jsiiProxy_CloudinitConfigPartOutputReference) validateSetFilenameParame
 
 func (j *jsiiProxy_CloudinitConfigPartOutputReference) validateSetInternalValueParameters(val interface{}) error {
 	switch val.(type) {
+	case cdktf.IResolvable:
+		// ok
 	case *CloudinitConfigPart:
 		val := val.(*CloudinitConfigPart)
 		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
@@ -200,11 +205,9 @@ func (j *jsiiProxy_CloudinitConfigPartOutputReference) validateSetInternalValueP
 		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
 			return err
 		}
-	case cdktf.IResolvable:
-		// ok
 	default:
 		if !_jsii_.IsAnonymousProxy(val) {
-			return fmt.Errorf("parameter val must be one of the allowed types: *CloudinitConfigPart, cdktf.IResolvable; received %#v (a %T)", val, val)
+			return fmt.Errorf("parameter val must be one of the allowed types: cdktf.IResolvable, *CloudinitConfigPart; received %#v (a %T)", val, val)
 		}
 	}
 
