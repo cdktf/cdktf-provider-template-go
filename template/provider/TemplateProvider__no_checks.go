@@ -15,6 +15,10 @@ func (t *jsiiProxy_TemplateProvider) validateOverrideLogicalIdParameters(newLogi
 	return nil
 }
 
+func validateTemplateProvider_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
+	return nil
+}
+
 func validateTemplateProvider_IsConstructParameters(x interface{}) error {
 	return nil
 }

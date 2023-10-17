@@ -59,6 +59,10 @@ func (d *jsiiProxy_DataTemplateCloudinitConfig) validatePutPartParameters(value 
 	return nil
 }
 
+func validateDataTemplateCloudinitConfig_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
+	return nil
+}
+
 func validateDataTemplateCloudinitConfig_IsConstructParameters(x interface{}) error {
 	return nil
 }
